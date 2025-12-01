@@ -174,7 +174,7 @@ export default function Footer() {
         <div className="pt-8">
           <div className="text-sm text-indigo-400 text-center">
             © {currentYear} Knowledge Without Borders.
-            All Rights Reserved.
+            All Rights Reserved MJ.
           </div>
         </div>
       </div>

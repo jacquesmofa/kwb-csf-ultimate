@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+out/
+build/
+
+# Other common tooling
+*.tsbuildinfo
+.vscode/

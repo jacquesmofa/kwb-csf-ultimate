@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d out --squash"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "4.0.2",
