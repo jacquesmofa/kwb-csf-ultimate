@@ -1,0 +1,24 @@
+# --- REQUIRED FOR REACT/VITE SINGLE PAGE APPLICATIONS (SPAs) ---
+
+# Turn on the Rewrite Engine
+
+RewriteEngine On
+
+# Ensure Authorization headers are passed to PHP scripts (optional, but good practice)
+
+# Note: The backslash before the asterisk is a common way to escape it in some contexts,
+
+# but the standard Apache/Hostinger configuration requires the literal asterisk.
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Rule 1: Skip if the file or directory exists (e.g., /assets/image.png)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rule 2: If the request is not for an existing file/directory,
+
+# internally rewrite the request to index.html (the entry point of your React app)
+
+RewriteRule ^ index.html [L]
