@@ -1,10 +1,11 @@
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
-const base = process.env.BASE_PATH || '/'
+// Explicitly set the base path to '/' for correct asset loading in Hostinger's public_html.
+const base = '/' 
+
 const isPreview = process.env.IS_PREVIEW  ? true : false;
 
 // https://vite.dev/config/
@@ -15,8 +16,9 @@ export default defineConfig({
   },
   plugins: [
     react({
-      // Enable React Fast Refresh
-      fastRefresh: true,
+      // REMOVED: The 'fastRefresh: true' line to fix the TypeScript error (ts(2353)).
+      // Fast refresh is typically handled automatically or via a different config
+      // and is not needed for production builds.
     }),
     AutoImport({
       imports: [
