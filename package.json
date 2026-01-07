@@ -26,6 +26,7 @@
     "i18next": "^23.7.18",
     "react-i18next": "^14.0.1",
     "react-router-dom": "^6.21.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.3",
     "vite": "^5.0.0"
