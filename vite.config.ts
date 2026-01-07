@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 
 // Explicitly set the base path to '/' for correct asset loading in Hostinger's public_html.
-const base = './' 
+const base = '' 
 
 const isPreview = process.env.IS_PREVIEW  ? true : false;
 
