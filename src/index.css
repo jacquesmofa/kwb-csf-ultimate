@@ -1,7 +1,4 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Critical CSS - Above the fold styles */
 @layer base {
