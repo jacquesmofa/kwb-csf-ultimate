@@ -1,44 +1,33 @@
-name: Deploy KWB-CSF to Hostinger
-
-on:
-  push:
-    branches:
-      - main 
-
-jobs:
-  web-deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v4
-
-      - name: ⚙️ Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' 
-
-      - name: 📦 Install dependencies
-        run: npm install
-
-      - name: 🏗 Build Project
-        run: npm run build 
-        
-      - name: 📂 Deploy 'out' folder contents
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.FTP_SERVER }} 
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          secure: false
-          # Changed to 'out/' based on your package.json and local folder
-          local-dir: out/ 
-          # Hostinger path
-          server-dir: domains/kwb-csf.com/public_html/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            src/** out/**
+{
+  "name": "react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "cp deployment/.htaccess out/",
+    "preview": "vite preview",
+    "deploy": "git push origin `git subtree split --prefix out main`:gh-pages --force"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "gh-pages": "^6.1.0",
+    "i18next": "^23.7.18",
+    "react-i18next": "^14.0.1",
+    "react-router-dom": "^6.21.3",
+    "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.17.3",
+    "vite": "^5.0.0"
+  }
+}
