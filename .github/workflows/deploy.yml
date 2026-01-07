@@ -33,10 +33,16 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           secure: false
-          # Changed to 'out/' based on your package.json and local folder
+          
+          # This points to the folder created by 'vite build'
           local-dir: out/ 
-          # Hostinger path
+          
+          # Your specific Hostinger path
           server-dir: domains/kwb-csf.com/public_html/
+          
+          # This deletes old files first to ensure the new 'assets' folder is uploaded
+          dangerous-clean-slate: true 
+
           exclude: |
             **/.git*
             **/.git*/**
