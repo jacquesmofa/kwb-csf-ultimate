@@ -25,20 +25,25 @@ jobs:
       - name: 🏗 Build Project
         run: npm run build 
         
-      - name: 📂 Deploy 'out' folder contents
+      - name: 📂 Deploy build folder contents
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
+          # Using your specific secret names here
           server: ${{ secrets.FTP_SERVER }} 
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           secure: false
-          # Changed to 'out/' based on your package.json and local folder
-          local-dir: out/ 
-          # Hostinger path
+          
+          # ⚠️ TRIPLE CHECK: Is your build folder 'dist' or 'out'?
+          # If you use Vite, keep 'dist/'. If you use Next.js, change to 'out/'
+          local-dir: dist/ 
+          
+          # Hostinger path for this specific domain
           server-dir: domains/kwb-csf.com/public_html/
+          
           exclude: |
             **/.git*
             **/.git*/**
             **/node_modules/**
-            src/** out/**
+            src/** dist/**
