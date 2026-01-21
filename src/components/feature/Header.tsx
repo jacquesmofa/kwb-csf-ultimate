@@ -72,7 +72,7 @@ export default function Header() {
             <div className="w-16 h-16 flex items-center justify-center mr-4 group-hover:scale-105 transition-all duration-300">
               <img 
                 // FIXED: Updated logo URL
-                src="https://kwb-csf.com/logos%20png/KWB%20Logo%20Shot%20.png" 
+                src="https://i.imgur.com/d3WuPxr.png" 
                 alt="Knowledge Without Borders Logo" 
                 className="w-full h-full object-contain"
               />
