@@ -49,7 +49,7 @@ export default function Footer() {
              
                 <img 
                   // FIXED: Updated logo URL
-                  src="https://kwb-csf.com/logos%20png/KWB%20Logo%20Shot%20.png" 
+                  src="https://i.imgur.com/d3WuPxr.png" 
                   alt="Knowledge Without Borders Logo" 
                   className="w-full h-full object-contain"
               
