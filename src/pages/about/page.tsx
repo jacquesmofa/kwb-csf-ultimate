@@ -112,7 +112,7 @@ const LeadershipSection = () => {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3">
                   <img 
-                    src="https://static.readdy.ai/image/2e117e8c7ffa34e61699363cecaf86d3/0a417ae60d1ad419d8e37dd49426b93b.jpeg"
+                    src="https://i.imgur.com/twN1TUa.png"
                     alt="Dr. François Yabit"
                     className="w-full h-80 object-cover object-top rounded-xl"
                   />
