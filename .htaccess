@@ -1,14 +1,13 @@
-<IfModule mod_mime.c>
-  AddType application/javascript .js
-  AddType application/javascript .mjs
-</IfModule>
+RewriteEngine On
+RewriteBase /
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-e
-  RewriteRule . /index.html [L]
-</IfModule>
+# 1. If the request is already for something inside /out, let it pass through
+RewriteRule ^out/ - [L]
+
+# 2. If the file or folder exists inside the 'out' folder, route there directly
+RewriteCond %{DOCUMENT_ROOT}/out/$1 -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/out/$1 -d
+RewriteRule ^(.*)$ out/$1 [L]
+
+# 3. For React Router paths or anything else, fall back to out/index.html
+RewriteRule ^(.*)$ out/index.html [L]
