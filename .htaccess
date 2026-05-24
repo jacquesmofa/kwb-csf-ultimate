@@ -1,13 +1,13 @@
 RewriteEngine On
-RewriteBase /
 
-# 1. If the request is already for something inside /out, let it pass through
-RewriteRule ^out/ - [L]
+# 1. If someone visits the root domain, look directly for the index.html file
+RewriteRule ^$ out/index.html [L]
 
-# 2. If the file or folder exists inside the 'out' folder, route there directly
-RewriteCond %{DOCUMENT_ROOT}/out/$1 -f [OR]
-RewriteCond %{DOCUMENT_ROOT}/out/$1 -d
+# 2. If the requested file or asset exists inside the out folder, serve it
+RewriteCond %{DOCUMENT_ROOT}/out/$1 -f
 RewriteRule ^(.*)$ out/$1 [L]
 
-# 3. For React Router paths or anything else, fall back to out/index.html
+# 3. Redirect React Router sub-pages (like /about) back to your main index file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ out/index.html [L]
