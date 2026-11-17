@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import announcement from '../../content/announcement.json';
 
 const HomePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const announcementLang: 'en' | 'fr' = i18n.language?.startsWith('fr') ? 'fr' : 'en';
 
   useEffect(() => {
     setIsLoaded(true);
@@ -585,116 +587,27 @@ const HomePage = () => {
     </section>
   );
 
-  const PartnersSection = () => {
-    const partners = [
-      {
-        name: "Government of Canada",
-        logo: "https://readdy.ai/api/search-image?query=Government%20of%20Canada%20official%20logo%2C%20federal%20government%20emblem%2C%20professional%20government%20branding%2C%20official%20seal&width=200&height=100&seq=partner-gov-canada&orientation=landscape",
-        website: "https://www.canada.ca",
-        description: "Federal Government Partnership"
-      },
-      {
-        name: "United Way",
-        logo: "https://readdy.ai/api/search-image?query=United%20Way%20official%20logo%2C%20nonprofit%20organization%20branding%2C%20community%20support%20emblem%2C%20charitable%20organization&width=200&height=100&seq=partner-united-way&orientation=landscape",
-        website: "https://www.unitedway.ca",
-        description: "Community Development Partner"
-      },
-      {
-        name: "Ontario Trillium Foundation",
-        logo: "https://readdy.ai/api/search-image?query=Ontario%20Trillium%20Foundation%20logo%2C%20provincial%20funding%20organization%2C%20grant%20foundation%20emblem%2C%20Ontario%20government&width=200&height=100&seq=partner-trillium&orientation=landscape",
-        website: "https://otf.ca",
-        description: "Funding & Grants Partner"
-      },
-      {
-        name: "Canadian Red Cross",
-        logo: "https://readdy.ai/api/search-image?query=Canadian%20Red%20Cross%20official%20logo%2C%20humanitarian%20organization%20emblem%2C%20disaster%20relief%20branding%2C%20health%20services&width=200&height=100&seq=partner-red-cross&orientation=landscape",
-        website: "https://www.redcross.ca",
-        description: "Humanitarian Services Partner"
-      },
-      {
-        name: "YMCA",
-        logo: "https://readdy.ai/api/search-image?query=YMCA%20official%20logo%2C%20community%20organization%20branding%2C%20youth%20services%20emblem%2C%20recreational%20services&width=200&height=100&seq=partner-ymca&orientation=landscape",
-        website: "https://www.ymca.ca",
-        description: "Youth Development Partner"
-      },
-      {
-        name: "United Nations",
-        logo: "https://readdy.ai/api/search-image?query=United%20Nations%20official%20logo%2C%20UN%20emblem%2C%20international%20organization%20branding%2C%20global%20development&width=200&height=100&seq=partner-un&orientation=landscape",
-        website: "https://www.un.org",
-        description: "International Development Partner"
-      },
-      {
-        name: "World Bank",
-        logo: "https://readdy.ai/api/search-image?query=World%20Bank%20official%20logo%2C%20international%20financial%20institution%20emblem%2C%20development%20finance%20branding&width=200&height=100&seq=partner-world-bank&orientation=landscape",
-        website: "https://www.worldbank.org",
-        description: "Development Finance Partner"
-      },
-      {
-        name: "African Development Bank",
-        logo: "https://readdy.ai/api/search-image?query=African%20Development%20Bank%20official%20logo%2C%20AfDB%20emblem%2C%20African%20financial%20institution%20branding%2C%20development%20bank&width=200&height=100&seq=partner-afdb&orientation=landscape",
-        website: "https://www.afdb.org",
-        description: "African Development Partner"
-      }
-    ];
-
-    return (
-      <section className="py-20 px-4 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our Strategic Partners
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborating with leading organizations to deliver exceptional capacity-building solutions
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {partners.map((partner, index) => (
-              <a
-                key={index}
-                href={partner.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
-              >
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-full h-20 mb-4 flex items-center justify-center">
-                    <img 
-                      src={partner.logo}
-                      alt={`${partner.name} Logo`}
-                      className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
-                    />
-                  </div>
-                  <h3 className="text-sm font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
-                    {partner.name}
-                  </h3>
-                  <p className="text-xs text-gray-600">{partner.description}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 mb-6">
-              Interested in partnering with Knowledge Without Borders?
-            </p>
-            <Link 
-              to="/contact" 
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 whitespace-nowrap cursor-pointer"
-            >
-              <i className="ri-handshake-line text-xl"></i>
-              Partner With Us
-            </Link>
-          </div>
-        </div>
-      </section>
-    );
-  };
+  // Latest announcement (text comes from src/content/announcement.json)
+  const AnnouncementBanner = () => (
+    <section className="bg-indigo-950 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row md:items-center gap-3 md:gap-6">
+        <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-300 whitespace-nowrap">
+          <i className="ri-megaphone-line text-base" aria-hidden="true"></i>
+          {announcementLang === 'fr' ? 'Annonce' : 'Announcement'}
+        </span>
+        <p className="flex-1 text-base md:text-lg font-semibold">{announcement[announcementLang].title}</p>
+        <Link to="/announcement" className="inline-flex items-center gap-2 rounded-lg bg-sky-500 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-400 transition-colors whitespace-nowrap self-start md:self-auto">
+          {announcementLang === 'fr' ? "Lire l'annonce" : 'Read the announcement'}
+          <i className="ri-arrow-right-line" aria-hidden="true"></i>
+        </Link>
+      </div>
+    </section>
+  );
 
   return (
     <div className={`min-h-screen transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
       <HeroSection />
+      <AnnouncementBanner />
       <MissionSection />
       <ServicesPreview />
       <AboutPreview />
@@ -702,7 +615,6 @@ const HomePage = () => {
       <PoliciesPreview />
       <GalleryPreview />
       <ClientStories />
-      <PartnersSection />
       <ContactPreview />
     </div>
   );

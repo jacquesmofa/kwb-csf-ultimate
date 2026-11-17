@@ -8,6 +8,7 @@ const AboutPage = lazy(() => import('../pages/about/page'));
 const ContactPage = lazy(() => import('../pages/contact/page'));
 const PoliciesPage = lazy(() => import('../pages/policies/page'));
 const TrainingPage = lazy(() => import('../pages/training/page'));
+const AnnouncementPage = lazy(() => import('../pages/announcement/page'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 // Use 'type RouteObject' here
@@ -39,6 +40,10 @@ const routes: RouteObject[] = [
   {
     path: '/training',
     element: <TrainingPage />,
+  },
+  {
+    path: '/announcement',
+    element: <AnnouncementPage />,
   },
   {
     path: '*',

@@ -1,0 +1,13 @@
+{
+  "name": "Knowledge Without Borders",
+  "nameFr": "Connaissance Sans Frontières",
+  "url": "https://kwb-csf.com",
+  "email": "kwb.csfglobal@gmail.com",
+  "phone": "(437) 875-8045",
+  "socials": [
+    { "name": "Facebook", "url": "https://www.facebook.com/share/p/17fyfJPJaV/", "icon": "ri-facebook-fill" },
+    { "name": "Instagram", "url": "https://instagram.com/kwbcsf", "icon": "ri-instagram-fill" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/kwbcsf", "icon": "ri-linkedin-fill" },
+    { "name": "X", "url": "https://x.com/kwbcsf", "icon": "ri-twitter-x-fill" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "site": {
+    "name": "Knowledge Without Borders",
+    "url": "https://kwb-csf.com",
+    "image": "/media/share-home.jpg",
+    "imageAlt": "Knowledge Without Borders logo",
+    "locale": "en_CA",
+    "localeAlternate": "fr_CA"
+  },
+  "pages": [
+    { "path": "/", "title": "Knowledge Without Borders | Capacity-Building in Etobicoke", "description": "Bilingual capacity-building firm in Etobicoke, founded in 2018: strategic planning, program development, funding research, training and more." },
+    { "path": "/services", "title": "Services | Knowledge Without Borders", "description": "Strategic planning, program and project development, funding research and proposal writing, finance, business plans, employment readiness and HR support." },
+    { "path": "/training", "title": "Training and Workshops | Knowledge Without Borders", "description": "Skill development workshops in leadership, project management and digital literacy for individuals, non-profits and small-to-medium enterprises." },
+    { "path": "/gallery", "title": "Gallery | Knowledge Without Borders", "description": "Photos from Knowledge Without Borders workshops, training sessions, meetings and community events in Etobicoke and the Greater Toronto Area." },
+    { "path": "/about", "title": "About Us | Knowledge Without Borders", "description": "Knowledge Without Borders / Connaissance Sans Frontières is a bilingual capacity-building firm founded in November 2018 and guided by the principle of Ubuntu." },
+    { "path": "/announcement", "title": "Cultivating Excellence Through Capacity-Building | KWB", "description": "Knowledge Without Borders launches a new capacity-building initiative for individuals, organizations and businesses. Read the announcement in English or French.", "image": "/media/share-announcement.jpg", "imageAlt": "Cultivating Excellence Through Capacity-Building, an announcement by Knowledge Without Borders" },
+    { "path": "/policies", "title": "Policies | Knowledge Without Borders", "description": "The policies that guide how Knowledge Without Borders works with clients, partners and the community, including privacy and accessibility." },
+    { "path": "/contact", "title": "Contact | Knowledge Without Borders", "description": "Request a preliminary consultation with Knowledge Without Borders in Etobicoke: call (437) 875-8045 or email kwb.csfglobal@gmail.com." }
+  ]
+}

@@ -1,25 +1,8 @@
-# Dependencies
 node_modules/
-
-# Build output
 dist/
 out/
 build/
-
-# Other common tooling
+out.zip
+.DS_Store
 *.tsbuildinfo
 .vscode/
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules
-node_modules

@@ -2,7 +2,7 @@
 
 Capacity-building for non-profits and businesses in Etobicoke: strategic planning, program development, fundraising, training.
 
-- Live domain: kwb-csf.com (deploy path) / knowledgewithoutborders.ca (in code): confirm
+- Live domain: https://kwb-csf.com (on the official letterhead; knowledgewithoutborders.ca was removed from the code 17 Nov 2026). Email kwb.csfglobal@gmail.com, phone (437) 875-8045.
 - Host: Hostinger-style path `domains/kwb-csf.com/public_html/`
 - Design and audience: see `brand-dna.md`. Placeholders: `PLACEHOLDERS.md` (create it when you find one).
 
@@ -19,11 +19,12 @@ Capacity-building for non-profits and businesses in Etobicoke: strategic plannin
 - Originally a Readdy export: Vite + React + TypeScript + Tailwind + React Router, i18next installed.
 - Install and build: `npm ci && npm run build` → output in `out/`.
 - Dev preview: `npm run dev`.
-- Routes: `/`, `/about`, `/contact`, `/gallery`, `/policies`, `/services`, `/training`.
+- Routes: `/`, `/about`, `/announcement`, `/contact`, `/gallery`, `/policies`, `/services`, `/training`.
+- Build: `vite build && node scripts/social-pages.mjs` (one HTML file per page with its own title, description and share picture, plus `sitemap.xml`; source `src/content/seo.json`; `SeoSync.tsx` sets the same in the browser).
 
 ## Deploy
 - No passwords, no FTP (17 Nov 2026). `.github/workflows/deploy.yml`: push to `main` → `npm ci && npm run build` → the built site (`out/`) is saved to the `live` branch → Hostinger pulls that branch (hPanel > kwb-csf.com > Advanced > Git, branch `live`, Auto deployment webhook) → the workflow checks kwb-csf.com shows the new build.
-- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` (or `deployment/.htaccess`) carries the server rules.
+- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` carries the server rules (https, clean addresses, per-page files, SPA fallback, caching).
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.
@@ -36,3 +37,10 @@ Capacity-building for non-profits and businesses in Etobicoke: strategic plannin
 - Design overlap with other clients: Uses stock Tailwind blues/purples: no brand identity yet. Highest priority for a real design system.
 
 - 17 Nov 2026: Hostinger (hPanel > kwb-csf.com > Advanced > Git) is connected to the `live` branch with Auto-deployment on. The old committed `out/`, `out.zip` and root `.htaccess` (which served `main/out`) were removed from `main`.
+
+## Content and editors (17 Nov 2026)
+- `src/content/announcement.json` (bilingual announcement from Papa François's document, shown at `/announcement` and in the home strip), `site.json` (email, phone, social links: footer, Contact, announcement), `seo.json`.
+- Pages CMS (`.pages.yml`) and Sveltia (`public/admin/`, https://kwb-csf.com/admin/). BOTH GENERATED: `npm run cms:config` from the JSON + `scripts/cms-registry.mjs`; `npm run cms:check`. Never edit them by hand.
+- Sveltia sign-in here is "Sign In Using Access Token" only: the site is published through the `live` branch, so a GitHub login secret can never be placed on the server (it would be committed).
+- Page text of the other pages is still hard-coded: move it to `src/content/pages/*.json` next (LDII is the model).
+- Logo, icons and share cards come from the official letterhead (`public/media/kwb-logo.png`). Open questions: `PLACEHOLDERS.md`.

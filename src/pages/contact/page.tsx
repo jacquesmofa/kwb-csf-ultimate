@@ -1,3 +1,4 @@
+import site from '../../content/site.json';
 import { useTranslation } from 'react-i18next';
 import { Suspense, useState } from 'react';
 
@@ -382,13 +383,7 @@ const MapSection = () => {
 };
 
 const ContactInformation = () => {
-  const socialLinks = [
-    { name: 'LinkedIn', href: 'https://linkedin.com/kwbcsf', icon: 'ri-linkedin-fill' },
-    { name: 'Facebook', href: 'https://facebook.com/kwbcsf', icon: 'ri-facebook-fill' },
-    { name: 'Instagram', href: 'https://instagram.com/kwbcsf', icon: 'ri-instagram-fill' },
-    { name: 'X', href: 'https://x.com/kwbcsf', icon: 'ri-twitter-x-fill' },
-    { name: 'YouTube', href: 'https://youtube.com/kwbcsf', icon: 'ri-youtube-fill' }
-  ];
+  const socialLinks = site.socials.map((x) => ({ name: x.name, href: x.url, icon: x.icon }));
 
   return (
     <section className="py-20 px-4 bg-white">

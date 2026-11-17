@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import site from '../../content/site.json';
 // Define __BASE_PATH__ for development/deployment context if it's used elsewhere
 declare const __BASE_PATH__: string;
 // Utility function to scroll to the top of the page (Instant for Footer navigation)
@@ -12,25 +13,19 @@ export default function Footer() {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Our Services', href: '/services' },
-    { name: 'Publications', href: '#' }
+    { name: 'Training', href: '/training' }
   ];
   const resources = [
-    { name: 'Articles & Insights', href: '#' },
-    { name: 'Client Testimonials', href: '#' },
-    { name: 'Events Calendar', href: '#' },
-    { name: 'Career Opportunities', href: '#' }
+    { name: 'Announcement / Annonce', href: '/announcement' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'Policies', href: '/policies' },
+    { name: 'Contact Us', href: '/contact' }
   ];
 // This function ensures an instant jump to the top of the destination page.
   const handleHomeLinkClick = () => {
     scrollToTop();
   };
-  const socialLinks = [
-    { name: 'LinkedIn', href: 'https://linkedin.com/kwbcsf', icon: 'ri-linkedin-fill' },
-    { name: 'Facebook', href: 'https://facebook.com/kwbcsf', icon: 'ri-facebook-fill' },
-    { name: 'Instagram', href: 'https://instagram.com/kwbcsf', icon: 'ri-instagram-fill' },
-    { name: 'X', href: 'https://x.com/kwbcsf', icon: 'ri-twitter-x-fill' },
-    { name: 'YouTube', href: 'https://youtube.com/kwbcsf', icon: 'ri-youtube-fill' }
-  ];
+  const socialLinks = site.socials.map((x) => ({ name: x.name, href: x.url, icon: x.icon }));
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-blue-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -125,13 +120,14 @@ export default function Footer() {
               {resources.map((resource) => (
                 <li key={resource.name}>
       
-                  <a
-                    href={resource.href}
+                  <Link
+                    to={resource.href}
+                    onClick={handleHomeLinkClick}
                     className="text-indigo-300 hover:text-sky-400 transition-colors duration-300 text-sm cursor-pointer"
                   >
                     {resource.name}
      
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

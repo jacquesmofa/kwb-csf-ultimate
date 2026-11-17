@@ -5,6 +5,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import Header from './components/feature/Header';
 import Footer from './components/feature/Footer';
+import SeoSync from './components/feature/SeoSync';
 import { Suspense } from 'react';
 
 // Loading component for better UX
@@ -21,6 +22,7 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <BrowserRouter basename={__BASE_PATH__}>
+        <SeoSync />
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">
