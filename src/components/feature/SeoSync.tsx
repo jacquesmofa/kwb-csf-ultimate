@@ -23,7 +23,8 @@ export default function SeoSync() {
     const path = pathname.replace(/\/+$/, '') || '/';
     const page = (seo.pages as Page[]).find((p) => p.path === path) ?? (seo.pages as Page[])[0];
     const url = seo.site.url + (page.path === '/' ? '/' : page.path);
-    const image = page.image || seo.site.image;
+    const img = page.image || seo.site.image;
+    const image = img.startsWith('/') ? seo.site.url + img : img;
     const imageAlt = page.imageAlt || seo.site.imageAlt;
     document.title = page.title;
     setMeta('name', 'description', page.description);
