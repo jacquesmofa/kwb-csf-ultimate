@@ -22,7 +22,8 @@ Capacity-building for non-profits and businesses in Etobicoke: strategic plannin
 - Routes: `/`, `/about`, `/contact`, `/gallery`, `/policies`, `/services`, `/training`.
 
 ## Deploy
-- `.github/workflows/deploy.yml`: push to `main` → build → FTP to `domains/kwb-csf.com/public_html/` (secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Has a `postbuild` step and `.htaccess` (a 403 routing loop was fixed 23 May).
+- No passwords, no FTP (17 Nov 2026). `.github/workflows/deploy.yml`: push to `main` → `npm ci && npm run build` → the built site (`out/`) is saved to the `live` branch → Hostinger pulls that branch (hPanel > kwb-csf.com > Advanced > Git, branch `live`, Auto deployment webhook) → the workflow checks kwb-csf.com shows the new build.
+- Never edit the `live` branch by hand: it is rewritten on every publish. `public/.htaccess` (or `deployment/.htaccess`) carries the server rules.
 
 ## Where things live
 - Pages: `src/pages/<page>/` (one folder per page, sections in `components/`). Routes: `src/router/`.

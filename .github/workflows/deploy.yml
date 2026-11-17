@@ -1,50 +1,67 @@
-name: Deploy KWB-CSF to Hostinger
+name: 🚀 Build and publish — Knowledge Without Borders (KWB-CSF)
+
+# How it works (plain words):
+# - Every change pushed to main is built here. If the build fails, nothing changes on the website.
+# - The finished website (folder out/) is saved to a branch of this repository called "live".
+# - Hostinger watches the "live" branch (hPanel > kwb-csf.com > Advanced > Git, with Auto deployment)
+#   and copies it to the website within a minute.
+# No passwords or secrets are needed anywhere.
+# "Run workflow" (Actions tab) publishes again by hand.
 
 on:
   push:
-    branches:
-      - main 
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-live
+  cancel-in-progress: false
 
 jobs:
-  web-deploy:
-    name: Deploy
+  build-and-publish:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 15
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v4
+      - name: 🚚 Get the code
+        uses: actions/checkout@v5
 
-      - name: ⚙️ Setup Node.js
-        uses: actions/setup-node@v4
+      - name: 🏗️ Set up Node.js
+        uses: actions/setup-node@v5
         with:
-          node-version: '20' 
+          node-version: 22
+          cache: npm
 
-      - name: 📦 Install dependencies
-        run: npm install
+      - name: 📦 Install exact dependency versions
+        run: npm ci
 
-      - name: 🏗 Build Project
-        run: npm run build 
-        
-      - name: 📂 Deploy 'out' folder contents
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: 🔨 Build the website
+        run: npm run build
+
+      - name: 🧹 Leave out files visitors never need
+        run: find out -name '*.map' -delete
+
+      - name: 📤 Save the finished website to the "live" branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          server: ${{ secrets.FTP_SERVER }} 
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          secure: false
-          
-          # This points to the folder created by 'vite build'
-          local-dir: out/ 
-          
-          # Your specific Hostinger path
-          server-dir: domains/kwb-csf.com/public_html/
-          
-          # This deletes old files first to ensure the new 'assets' folder is uploaded
-          dangerous-clean-slate: true 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: live
+          force_orphan: true
+          enable_jekyll: true
+          commit_message: "Website build from ${{ github.sha }}"
 
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            src/** out/**
+      - name: ✅ Check the website shows this version
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://kwb-csf.com' }}
+        run: |
+          ASSET=$(grep -o 'assets/index-[^"]*\.js' out/index.html | head -1)
+          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+            if curl -fsSL -H 'Cache-Control: no-cache' "$SITE_URL/?v=${GITHUB_SHA::7}-$i" | grep -q "$ASSET"; then
+              echo "✅ $SITE_URL shows this version ($ASSET)" | tee -a "$GITHUB_STEP_SUMMARY"; exit 0
+            fi
+            echo "Not visible yet, checking again in 10s ($i/12)"; sleep 10
+          done
+          echo "::warning::The \"live\" branch is updated, but $SITE_URL does not show it yet. Check hPanel > Advanced > Git > Auto deployment for this site."
