@@ -34,3 +34,5 @@ Capacity-building for non-profits and businesses in Etobicoke: strategic plannin
 - 68 Readdy AI placeholder image URLs (`readdy.ai/api/search-image`) are still in the code. Replace them with real photos and track the rest in `PLACEHOLDERS.md`.
 - Different stack from the others: React 18, Vite 5, **Tailwind 4**. Don't copy Tailwind 3 config patterns into it.
 - Design overlap with other clients: Uses stock Tailwind blues/purples: no brand identity yet. Highest priority for a real design system.
+
+- 17 Nov 2026: Hostinger (hPanel > kwb-csf.com > Advanced > Git) is connected to the `live` branch with Auto-deployment on. The old committed `out/`, `out.zip` and root `.htaccess` (which served `main/out`) were removed from `main`.
