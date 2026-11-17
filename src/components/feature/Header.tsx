@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import copy from '../../content/layout/header.json';
+// Text, images and links: src/content/layout/header.json (editable in the website editors).
 
 // Define __BASE_PATH__ for development/deployment context if it's used elsewhere
 declare const __BASE_PATH__: string;
@@ -72,18 +74,14 @@ export default function Header() {
             <div className="w-16 h-16 flex items-center justify-center mr-4 group-hover:scale-105 transition-all duration-300">
               <img 
                 // FIXED: Updated logo URL
-                src="https://i.imgur.com/d3WuPxr.png" 
-                alt="Knowledge Without Borders Logo" 
+                src={copy.logoContainerIncreasedSizeTo.image} 
+                alt={copy.logoContainerIncreasedSizeTo.imageAlt} 
                 className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="text-xl font-extrabold text-indigo-900 group-hover:text-sky-600 transition-colors duration-300">
-                KNOWLEDGE WITHOUT BORDERS
-              </span>
-              <span className="text-xs mt-0.5 text-indigo-500">
-                CONNAISSANCE SANS FRONTIÈRES
-              </span>
+              <span className="text-xl font-extrabold text-indigo-900 group-hover:text-sky-600 transition-colors duration-300">{copy.logoContainerIncreasedSizeTo.label}</span>
+              <span className="text-xs mt-0.5 text-indigo-500">{copy.logoContainerIncreasedSizeTo.label2}</span>
             </div>
           </Link>
 

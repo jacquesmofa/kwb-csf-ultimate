@@ -1,6 +1,8 @@
 import site from '../../content/site.json';
 import { useTranslation } from 'react-i18next';
 import { Suspense, useState } from 'react';
+import copy from '../../content/pages/contact.json';
+// Text, images and links: src/content/pages/contact.json (editable in the website editors).
 
 const ContactHero = () => {
   return (
@@ -9,65 +11,30 @@ const ContactHero = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Professional%20African%20Canadian%20business%20consultation%2C%20diverse%20Black%20professionals%20in%20welcoming%20office%20environment%2C%20brown%20skin%20professionals%2C%20client%20meeting%2C%20modern%20professional%20space%2C%20collaborative%20discussion%2C%20natural%20lighting&width=1920&height=1080&seq=contact-hero-bg-v2&orientation=landscape')`
+          backgroundImage: `url('${copy.hero.backgroundImage}')`
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900/90 via-blue-800/85 to-indigo-900/90"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto text-center text-white">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-          Contact Knowledge Without Borders
-        </h1>
-        <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-yellow-300">
-          Contactez Connaissance Sans Frontières
-        </h2>
-        <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed opacity-95">
-          Ready to transform your organization? Get in touch with our capacity-building experts today
-        </p>
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">{copy.hero.title}</h1>
+        <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-yellow-300">{copy.hero.heading}</h2>
+        <p className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed opacity-95">{copy.hero.text}</p>
       </div>
     </section>
   );
 };
 
 const ContactInfo = () => {
-  const contactMethods = [
-    {
-      icon: "ri-phone-line",
-      title: "Phone",
-      info: "(437) 875-8045",
-      description: "Call us during business hours for immediate assistance"
-    },
-    {
-      icon: "ri-printer-line", 
-      title: "Fax",
-      info: "(416) 438-9938",
-      description: "Send us documents and formal communications"
-    },
-    {
-      icon: "ri-mail-line",
-      title: "Email",
-      info: "kwb.csfglobal@gmail.com",
-      description: "Send us your inquiries and we'll respond within 24 hours"
-    },
-    {
-      icon: "ri-time-line",
-      title: "Business Hours",
-      info: "Monday - Friday: 9:00 AM - 5:00 PM",
-      description: "We're here to help during regular business hours"
-    }
-  ];
+  const contactMethods = copy.contactMethods;
 
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Contact Information
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Multiple ways to reach us - choose what works best for you
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{copy.contactInfo.heading}</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{copy.contactInfo.text}</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -155,12 +122,8 @@ const ContactForm = () => {
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Send Us a Message
-          </h2>
-          <p className="text-xl text-gray-600">
-            Fill out the form below and we'll get back to you within 24 hours
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{copy.contactForm.heading}</h2>
+          <p className="text-xl text-gray-600">{copy.contactForm.text}</p>
         </div>
         
         <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -168,9 +131,7 @@ const ContactForm = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Name Field */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Full Name *
-                </label>
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">{copy.nameField.fieldLabel}</label>
                 <input
                   type="text"
                   id="name"
@@ -179,15 +140,13 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Enter your full name"
+                  placeholder={copy.nameField.placeholder}
                 />
               </div>
               
               {/* Email Field */}
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Email Address *
-                </label>
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">{copy.emailField.fieldLabel}</label>
                 <input
                   type="email"
                   id="email"
@@ -196,7 +155,7 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Enter your email address"
+                  placeholder={copy.emailField.placeholder}
                 />
               </div>
             </div>
@@ -204,9 +163,7 @@ const ContactForm = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Organization Field */}
               <div>
-                <label htmlFor="organization" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Organization
-                </label>
+                <label htmlFor="organization" className="block text-sm font-semibold text-gray-700 mb-2">{copy.organizationField.fieldLabel}</label>
                 <input
                   type="text"
                   id="organization"
@@ -214,15 +171,13 @@ const ContactForm = () => {
                   value={formData.organization}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Enter your organization name"
+                  placeholder={copy.organizationField.placeholder}
                 />
               </div>
               
               {/* Phone Field */}
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
-                  Phone Number
-                </label>
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">{copy.phoneField.fieldLabel}</label>
                 <input
                   type="tel"
                   id="phone"
@@ -230,16 +185,14 @@ const ContactForm = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Enter your phone number"
+                  placeholder={copy.phoneField.placeholder}
                 />
               </div>
             </div>
             
             {/* Service Field */}
             <div>
-              <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
-                Service of Interest
-              </label>
+              <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">{copy.serviceField.fieldLabel}</label>
               <select
                 id="service"
                 name="service"
@@ -247,22 +200,20 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               >
-                <option value="">Select a service</option>
-                <option value="strategic-planning">Strategic Planning & Implementation</option>
-                <option value="monitoring-evaluation">Monitoring & Evaluation</option>
-                <option value="fundraising">Fundraising & Proposal Writing</option>
-                <option value="policies">Policies & Procedures</option>
-                <option value="financial-management">Financial Management</option>
-                <option value="training">Training & Capacity Building</option>
-                <option value="other">Other</option>
+                <option value="">{copy.serviceField.option}</option>
+                <option value="strategic-planning">{copy.serviceField.option2}</option>
+                <option value="monitoring-evaluation">{copy.serviceField.option3}</option>
+                <option value="fundraising">{copy.serviceField.option4}</option>
+                <option value="policies">{copy.serviceField.option5}</option>
+                <option value="financial-management">{copy.serviceField.option6}</option>
+                <option value="training">{copy.serviceField.option7}</option>
+                <option value="other">{copy.serviceField.option8}</option>
               </select>
             </div>
             
             {/* Message Field */}
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
-                Message *
-              </label>
+              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">{copy.messageField.fieldLabel}</label>
               <textarea
                 id="message"
                 name="message"
@@ -272,11 +223,10 @@ const ContactForm = () => {
                 rows={6}
                 maxLength={500}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                placeholder="Tell us about your organization and how we can help..."
+                placeholder={copy.messageField.placeholder}
               ></textarea>
               <p className="text-sm text-gray-500 mt-1">
-                {formData.message.length}/500 characters
-              </p>
+                {formData.message.length}{copy.messageField.text}</p>
             </div>
             
             {/* Submission Status Messages */}
@@ -284,7 +234,7 @@ const ContactForm = () => {
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                 <div className="flex items-center">
                   <i className="ri-check-circle-line text-green-500 text-xl mr-3"></i>
-                  <p className="text-green-700">Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                  <p className="text-green-700">{copy.submissionStatusMessages.text}</p>
                 </div>
               </div>
             )}
@@ -293,7 +243,7 @@ const ContactForm = () => {
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                 <div className="flex items-center">
                   <i className="ri-error-warning-line text-red-500 text-xl mr-3"></i>
-                  <p className="text-red-700">Sorry, there was an error sending your message. Please try again or contact us directly.</p>
+                  <p className="text-red-700">{copy.submissionStatusMessages.text2}</p>
                 </div>
               </div>
             )}
@@ -306,9 +256,7 @@ const ContactForm = () => {
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center">
-                  <i className="ri-loader-4-line animate-spin mr-2"></i>
-                  Sending Message...
-                </span>
+                  <i className="ri-loader-4-line animate-spin mr-2"></i>{copy.submitButton.label}</span>
               ) : (
                 'Send Message'
               )}
@@ -325,54 +273,43 @@ const MapSection = () => {
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Visit Our Offices
-          </h2>
-          <p className="text-xl text-gray-600">
-            Two convenient locations in Etobicoke, Ontario - easily accessible by public transit and car
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{copy.mapSection.heading}</h2>
+          <p className="text-xl text-gray-600">{copy.mapSection.text}</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Main Office Map */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Main Office</h3>
-            <p className="text-gray-600 mb-4">
-              Mozia Professional Business Centre<br />
-              10 Belfield Road, 2nd Floor<br />
-              Etobicoke ON M9W 1G1
-            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{copy.mainOfficeMap.subheading}</h3>
+            <p className="text-gray-600 mb-4">{copy.mainOfficeMap.text}<br />{copy.mainOfficeMap.text2}<br />{copy.mainOfficeMap.text3}</p>
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.8!2d-79.5567!3d43.7089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a1e8e8e8e8e%3A0x1234567890abcdef!2s10%20Belfield%20Rd%2C%20Etobicoke%2C%20ON%20M9W%201G1!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
+                src={copy.mainOfficeMap.embedUrl}
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Knowledge Without Borders Main Office Location"
+                title={copy.mainOfficeMap.title}
               ></iframe>
             </div>
           </div>
           
           {/* Satellite Office Map */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Satellite Office</h3>
-            <p className="text-gray-600 mb-4">
-              64 Vanevery Street<br />
-              Etobicoke ON M8V 1Y6
-            </p>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">{copy.satelliteOfficeMap.subheading}</h3>
+            <p className="text-gray-600 mb-4">{copy.satelliteOfficeMap.text}<br />{copy.satelliteOfficeMap.text2}</p>
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2!2d-79.4789!3d43.6012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a1e8e8e8e8e%3A0xabcdef1234567890!2s64%20Vanevery%20St%2C%20Etobicoke%2C%20ON%20M8V%201Y6!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
+                src={copy.satelliteOfficeMap.embedUrl}
                 width="100%"
                 height="350"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Knowledge Without Borders Satellite Office Location"
+                title={copy.satelliteOfficeMap.title}
               ></iframe>
             </div>
           </div>
@@ -389,12 +326,8 @@ const ContactInformation = () => {
     <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get In Touch With Us
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Multiple ways to connect with our capacity-building experts
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">{copy.contactInformation.heading}</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{copy.contactInformation.text}</p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
@@ -404,43 +337,37 @@ const ContactInformation = () => {
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                 <i className="ri-building-line text-blue-600 text-xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">Main Office</h3>
+              <h3 className="text-2xl font-bold text-gray-900">{copy.mainOffice.subheading}</h3>
             </div>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
                 <i className="ri-map-pin-line text-blue-600 text-xl mt-1"></i>
                 <div>
-                  <p className="font-semibold text-gray-900">Mozia Professional Business Centre</p>
-                  <p className="text-gray-700">10 Belfield Road, 2nd Floor</p>
-                  <p className="text-gray-700">Etobicoke ON M9W 1G1</p>
+                  <p className="font-semibold text-gray-900">{copy.mainOffice.text}</p>
+                  <p className="text-gray-700">{copy.mainOffice.text2}</p>
+                  <p className="text-gray-700">{copy.mainOffice.text3}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-phone-line text-blue-600 text-xl"></i>
-                <a href="tel:+14378758045" className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  (437) 875-8045
-                </a>
+                <a href={copy.mainOffice.phoneLink} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">{copy.mainOffice.link}</a>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-mail-line text-blue-600 text-xl"></i>
-                <a href="mailto:kwb.csfglobal@gmail.com" className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  kwb.csfglobal@gmail.com
-                </a>
+                <a href={copy.mainOffice.emailLink} className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">{copy.mainOffice.link2}</a>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-global-line text-blue-600 text-xl"></i>
-                <a href="https://www.kwb-csf.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">
-                  www.kwb-csf.com
-                </a>
+                <a href={copy.mainOffice.url} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer">{copy.mainOffice.link3}</a>
               </div>
             </div>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Follow Us</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">{copy.mainOffice.subheading2}</h4>
               <div className="flex space-x-3">
                 {socialLinks.map((social) => (
                   <a
@@ -464,35 +391,31 @@ const ContactInformation = () => {
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
                 <i className="ri-building-2-line text-purple-600 text-xl"></i>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">Satellite Office</h3>
+              <h3 className="text-2xl font-bold text-gray-900">{copy.satelliteOffice.subheading}</h3>
             </div>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3">
                 <i className="ri-map-pin-line text-purple-600 text-xl mt-1"></i>
                 <div>
-                  <p className="text-gray-700">64 Vanevery Street</p>
-                  <p className="text-gray-700">Etobicoke ON M8V 1Y6</p>
+                  <p className="text-gray-700">{copy.satelliteOffice.text}</p>
+                  <p className="text-gray-700">{copy.satelliteOffice.text2}</p>
                 </div>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-phone-line text-purple-600 text-xl"></i>
-                <a href="tel:+14378758045" className="text-gray-700 hover:text-purple-600 transition-colors cursor-pointer">
-                  (437) 875-8045
-                </a>
+                <a href={copy.satelliteOffice.phoneLink} className="text-gray-700 hover:text-purple-600 transition-colors cursor-pointer">{copy.satelliteOffice.link}</a>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-fax-line text-purple-600 text-xl"></i>
-                <span className="text-gray-700">(416) 438-9938</span>
+                <span className="text-gray-700">{copy.satelliteOffice.label}</span>
               </div>
               
               <div className="flex items-center gap-3">
                 <i className="ri-mail-line text-purple-600 text-xl"></i>
-                <a href="mailto:kwb.csfglobal@gmail.com" className="text-gray-700 hover:text-purple-600 transition-colors cursor-pointer">
-                  kwb.csfglobal@gmail.com
-                </a>
+                <a href={copy.satelliteOffice.emailLink} className="text-gray-700 hover:text-purple-600 transition-colors cursor-pointer">{copy.satelliteOffice.link2}</a>
               </div>
             </div>
           </div>
@@ -506,28 +429,20 @@ const ContactInformation = () => {
 const CTASection = () => (
   <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
     <div className="max-w-7xl mx-auto text-center">
-      <h2 className="text-4xl md:text-5xl font-bold mb-6">
-        Let's Start Building Your Success
-      </h2>
-      <p className="text-xl opacity-90 max-w-3xl mx-auto mb-12">
-        Every great organization starts with a conversation. Reach out today and let's discuss how we can help strengthen your capacity and impact.
-      </p>
+      <h2 className="text-4xl md:text-5xl font-bold mb-6">{copy.ctasection.heading}</h2>
+      <p className="text-xl opacity-90 max-w-3xl mx-auto mb-12">{copy.ctasection.text}</p>
       
       <div className="flex flex-col sm:flex-row gap-6 justify-center">
         <a 
-          href="tel:(437) 875-8045" 
+          href={copy.ctasection.phoneLink} 
           className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer"
         >
-          <i className="ri-phone-line"></i>
-          Call Now: (437) 875-8045
-        </a>
+          <i className="ri-phone-line"></i>{copy.ctasection.link}</a>
         <a 
-          href="mailto:kwb.csfglobal@gmail.com" 
+          href={copy.ctasection.emailLink} 
           className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition-colors whitespace-nowrap cursor-pointer"
         >
-          <i className="ri-mail-line"></i>
-          Email Us
-        </a>
+          <i className="ri-mail-line"></i>{copy.ctasection.link2}</a>
       </div>
     </div>
   </section>
@@ -537,7 +452,7 @@ export default function ContactPage() {
   const { t } = useTranslation();
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div>{copy.page.text}</div>}>
       <div className="min-h-screen">
         <ContactHero />
         <ContactInfo />

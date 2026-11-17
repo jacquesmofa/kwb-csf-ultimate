@@ -22,4 +22,7 @@ Everything here is unconfirmed or temporary. Ask Papa François; do not invent.
 - Share pictures (`public/media/share-*.jpg`) and icons are made from the official letterhead logo.
 
 ## Editors
-- Announcement, contact details, social links and Google texts are editable (Pages CMS and /admin). Page text on Home, Services, About, Training, Policies, Contact is still inside the code: next step.
+- Every page, the menu and the footer are editable in Pages CMS and at /admin (17 Nov 2026).
+
+## Contact form
+- Sends through Formspree (`formspree.io/f/xvglzkwz`). Confirm which inbox receives it (should be kwb.csfglobal@gmail.com) and send a test message.

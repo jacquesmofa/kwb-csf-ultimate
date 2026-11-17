@@ -1,0 +1,64 @@
+{
+  "quickLinks": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "About Us",
+      "href": "/about"
+    },
+    {
+      "name": "Our Services",
+      "href": "/services"
+    },
+    {
+      "name": "Training",
+      "href": "/training"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Announcement / Annonce",
+      "href": "/announcement"
+    },
+    {
+      "name": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "name": "Policies",
+      "href": "/policies"
+    },
+    {
+      "name": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "logoContainer": {
+    "image": "https://i.imgur.com/d3WuPxr.png",
+    "imageAlt": "Knowledge Without Borders Logo",
+    "text": "KWB / CSF",
+    "text2": "Knowledge Without Borders",
+    "text3": "Driving capacity building and sustainable growth for community organizations worldwide. Empowering communities through strategic transformation and organizational excellence."
+  },
+  "quickLinksSection": {
+    "subheading": "Quick Links"
+  },
+  "resourcesSection": {
+    "subheading": "Resources"
+  },
+  "contactInfo": {
+    "subheading": "Contact Info",
+    "smallHeading": "Main Office",
+    "text": "Mozia Professional Business Centre",
+    "text2": "10 Belfield Road, 2nd Floor",
+    "text3": "Etobicoke ON M9W 1G1",
+    "text4": "Phone: (437) 875-8045",
+    "emailLink": "mailto:kwb.csfglobal@gmail.com",
+    "link": "kwb.csfglobal@gmail.com"
+  },
+  "bottomFooter": {
+    "text": " Knowledge Without Borders. All Rights Reserved MJ."
+  }
+}

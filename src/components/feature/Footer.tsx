@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import site from '../../content/site.json';
+import copy from '../../content/layout/footer.json';
+// Text, images and links: src/content/layout/footer.json (editable in the website editors).
 // Define __BASE_PATH__ for development/deployment context if it's used elsewhere
 declare const __BASE_PATH__: string;
 // Utility function to scroll to the top of the page (Instant for Footer navigation)
@@ -9,18 +11,8 @@ const scrollToTop = () => {
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Services', href: '/services' },
-    { name: 'Training', href: '/training' }
-  ];
-  const resources = [
-    { name: 'Announcement / Annonce', href: '/announcement' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Policies', href: '/policies' },
-    { name: 'Contact Us', href: '/contact' }
-  ];
+  const quickLinks = copy.quickLinks;
+  const resources = copy.resources;
 // This function ensures an instant jump to the top of the destination page.
   const handleHomeLinkClick = () => {
     scrollToTop();
@@ -44,8 +36,8 @@ export default function Footer() {
              
                 <img 
                   // FIXED: Updated logo URL
-                  src="https://i.imgur.com/d3WuPxr.png" 
-                  alt="Knowledge Without Borders Logo" 
+                  src={copy.logoContainer.image} 
+                  alt={copy.logoContainer.imageAlt} 
                   className="w-full h-full object-contain"
               
                 />
@@ -56,18 +48,13 @@ export default function Footer() {
                   onClick={handleHomeLinkClick} 
                
                   className="text-3xl font-bold mb-4 block hover:text-yellow-300 transition-colors cursor-pointer"
-                >
-                  KWB / CSF
-                </Link>
-                <p className="text-indigo-300 text-sm">Knowledge Without Borders</p>
+                >{copy.logoContainer.text}</Link>
+                <p className="text-indigo-300 text-sm">{copy.logoContainer.text2}</p>
               </div>
      
             </Link>
             
-            <p className="text-indigo-300 text-sm leading-relaxed mb-6 max-w-md">
-              Driving capacity building and sustainable growth for community organizations worldwide.
-              Empowering communities through strategic transformation and organizational excellence.
-            </p>
+            <p className="text-indigo-300 text-sm leading-relaxed mb-6 max-w-md">{copy.logoContainer.text3}</p>
             
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -90,9 +77,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
    
-            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">
-              Quick Links
-            </h4>
+            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">{copy.quickLinksSection.subheading}</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -113,9 +98,7 @@ export default function Footer() {
           {/* Resources */}
        
           <div>
-            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">
-              Resources
-            </h4>
+            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">{copy.resourcesSection.subheading}</h4>
             <ul className="space-y-3">
               {resources.map((resource) => (
                 <li key={resource.name}>
@@ -136,30 +119,22 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             
-            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">
-              Contact Info
-            </h4>
+            <h4 className="text-lg font-bold mb-6 border-b-2 border-sky-500 inline-block pb-1">{copy.contactInfo.subheading}</h4>
             <div className="space-y-4 text-sm">
               <div>
-                <h5 className="font-semibold text-white mb-2">Main Office</h5>
+                <h5 className="font-semibold text-white mb-2">{copy.contactInfo.smallHeading}</h5>
                 <p className="text-indigo-300 
-                  leading-relaxed">
-                  Mozia Professional Business Centre<br />
-                  10 Belfield Road, 2nd Floor<br />
-                  Etobicoke ON M9W 1G1
-                </p>
+                  leading-relaxed">{copy.contactInfo.text}<br />{copy.contactInfo.text2}<br />{copy.contactInfo.text3}</p>
               </div>
     
            
               <div>
-                <p className="text-indigo-300">Phone: (437) 875-8045</p>
+                <p className="text-indigo-300">{copy.contactInfo.text4}</p>
               </div>
               
               <div>
                
-                <a href="mailto:kwb.csfglobal@gmail.com" className="text-indigo-300 hover:text-sky-400 transition-colors duration-300 block">
-                  kwb.csfglobal@gmail.com
-                </a>
+                <a href={copy.contactInfo.emailLink} className="text-indigo-300 hover:text-sky-400 transition-colors duration-300 block">{copy.contactInfo.link}</a>
               </div>
             </div>
           </div>
@@ -169,9 +144,7 @@ export default function Footer() {
     
         <div className="pt-8">
           <div className="text-sm text-indigo-400 text-center">
-            © {currentYear} Knowledge Without Borders.
-            All Rights Reserved MJ.
-          </div>
+            © {currentYear}{copy.bottomFooter.text}</div>
         </div>
       </div>
     </footer>

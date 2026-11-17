@@ -1,0 +1,250 @@
+{
+  "hero": {
+    "backgroundImage": "https://readdy.ai/api/search-image?query=Professional%20African%20Canadian%20business%20team%20collaborating%20in%20modern%20conference%20room%20with%20natural%20lighting%2C%20Black%20professionals%20in%20strategic%20planning%20meeting%2C%20brown-skinned%20multicultural%20team%20working%20together%2C%20diverse%20African%20descent%20professionals%2C%20clean%20minimalist%20corporate%20environment%2C%20left%20side%20has%20subtle%20gradient%20overlay%20for%20text%20readability&width=1920&height=1080&seq=hero-bg-african-canadian&orientation=landscape",
+    "text": "Bilingual Capacity Building Excellence",
+    "title": "KNOWLEDGE WITHOUT",
+    "label": "BORDERS",
+    "heading": "CONNAISSANCE SANS",
+    "label2": "FRONTIÈRES",
+    "text2": "A bilingual firm incorporated in November 2018, providing capacity-building services to individuals, organizations, and businesses across 8 specialized consulting areas.",
+    "label3": "Explore Our Services",
+    "label4": "Schedule Consultation",
+    "label5": "(437) 875-8045",
+    "label6": "kwb.csfglobal@gmail.com",
+    "label7": "www.kwb-csf.com"
+  },
+  "mission": {
+    "heading2": "Our Mission & Vision",
+    "text3": "Building organizational capacity through comprehensive, bilingual consulting services",
+    "subheading": "Our Mission",
+    "text4": "To provide comprehensive capacity-building services to individuals, organizations, and businesses, empowering them to achieve sustainable growth and meaningful impact in their communities through strategic planning, organizational development, and professional excellence.",
+    "subheading2": "Our Vision",
+    "text5": "To be the leading bilingual consulting firm that bridges knowledge gaps and removes barriers, creating a world where organizations thrive through enhanced capacity, strategic excellence, and sustainable development practices."
+  },
+  "servicesSection": {
+    "heading3": "Our Comprehensive Services",
+    "text6": "Eight specialized consulting areas designed to strengthen your organization",
+    "text7": "View All Services ",
+    "text8": "Read More "
+  },
+  "services": [
+    {
+      "title": "Strategic Planning & Implementation",
+      "description": "Comprehensive strategic planning services that focus on three fundamental questions: What does your organization want to do? How will it achieve its goals? What impact will success create? Our process involves developing vision, mission, values, programs, SWOT analysis, and strategic priorities with a complete implementation roadmap.",
+      "icon": "ri-roadmap-line",
+      "color": "blue",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20strategic%20planning%20workshop%20with%20Black%20professionals%20around%20conference%20table%20reviewing%20organizational%20roadmap%2C%20brown-skinned%20diverse%20team%20members%2C%20modern%20office%20setting%2C%20collaborative%20planning%20session%2C%20professional%20business%20environment&width=600&height=400&seq=service-strategic-african&orientation=landscape"
+    },
+    {
+      "title": "Monitoring & Evaluation Frameworks",
+      "description": "Design comprehensive M&E frameworks to assess program effectiveness and efficiency. Our systematic approach includes information collection during project progression, comparing achievements against plans, and conducting feasibility studies, ongoing monitoring, and post-completion evaluations to ensure organizational success.",
+      "icon": "ri-bar-chart-line",
+      "color": "green",
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20data%20analysis%20team%20reviewing%20charts%20and%20graphs%2C%20Black%20professionals%20in%20monitoring%20evaluation%20session%2C%20brown-skinned%20team%20assessing%20impact%20metrics%2C%20modern%20analytics%20environment%2C%20collaborative%20assessment&width=600&height=400&seq=service-monitoring-african&orientation=landscape"
+    },
+    {
+      "title": "Fundraising & Proposal Writing",
+      "description": "Secure financial resources through expert fundraising strategies including donation solicitations, events, income-generating activities, and Social Enterprise incubations. Our proposal writing covers both unsolicited funding applications and formal Calls for Proposals with strong project ideas and detailed budgets.",
+      "icon": "ri-funds-line",
+      "color": "purple",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20fundraising%20event%20with%20Black%20professionals%20celebrating%20grant%20approval%2C%20brown-skinned%20team%20achievement%20celebration%2C%20modern%20office%20environment%2C%20collaborative%20success%20in%20nonprofit%20funding&width=600&height=400&seq=service-fundraising-african&orientation=landscape"
+    },
+    {
+      "title": "Human Resources & Procedures",
+      "description": "Comprehensive HR solutions including recruitment policies, performance evaluation systems, and essential organizational procedures. We help develop robust governance structures, clear operational procedures, and personnel policies that create transparency, accountability, and organizational efficiency.",
+      "icon": "ri-team-line",
+      "color": "orange",
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20HR%20professionals%20conducting%20employee%20training%20session%2C%20Black%20team%20members%20in%20diverse%20workplace%2C%20brown-skinned%20professionals%20in%20development%20session%2C%20modern%20office%20environment%2C%20collaborative%20team%20building&width=600&height=400&seq=service-hr-african&orientation=landscape"
+    },
+    {
+      "title": "Financial Service Support",
+      "description": "Expert financial management including budgeting, accounting, and tax preparation services. We provide comprehensive support for operating budget development, financial statement analysis, audited financial statement review, and both personal and business income tax preparation and filing.",
+      "icon": "ri-money-dollar-circle-line",
+      "color": "indigo",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20financial%20planning%20meeting%20with%20Black%20accountants%20reviewing%20budget%20documents%2C%20brown-skinned%20professionals%20in%20financial%20consultation%2C%20modern%20office%20setting%2C%20collaborative%20financial%20analysis&width=600&height=400&seq=service-financial-african&orientation=landscape"
+    },
+    {
+      "title": "Translation & Interpretation",
+      "description": "Professional bilingual services in English and French to ensure your organization can effectively communicate with diverse communities. Our translation and interpretation services help break down language barriers and expand your organizational reach and impact.",
+      "icon": "ri-translate-2",
+      "color": "teal",
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20professional%20translator%20working%20with%20documents%20in%20multiple%20languages%2C%20Black%20bilingual%20services%20professional%2C%20brown-skinned%20multicultural%20communication%20specialist%2C%20modern%20office%20environment%2C%20professional%20interpretation&width=600&height=400&seq=service-translation-african&orientation=landscape"
+    },
+    {
+      "title": "Employment Readiness Training",
+      "description": "Comprehensive job preparation programs designed to enhance employability and career development. Our training covers resume writing, interview skills, workplace communication, professional development, and career planning to help individuals successfully enter or advance in the workforce.",
+      "icon": "ri-briefcase-line",
+      "color": "red",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20employment%20readiness%20workshop%20with%20Black%20participants%2C%20brown-skinned%20diverse%20job%20seekers%20in%20training%20session%2C%20professional%20development%2C%20modern%20training%20facility%2C%20career%20preparation%20program&width=600&height=400&seq=service-employment-african&orientation=landscape"
+    },
+    {
+      "title": "Business Plan Development",
+      "description": "Expert guidance in creating comprehensive business plans that attract investors and guide organizational growth. Our services include market analysis, financial projections, operational planning, and strategic positioning to help your business or organization achieve sustainable success.",
+      "icon": "ri-file-chart-line",
+      "color": "cyan",
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20business%20planning%20consultation%20with%20Black%20entrepreneurs%20reviewing%20business%20plan%20documents%2C%20brown-skinned%20professionals%20in%20strategic%20meeting%2C%20modern%20office%20environment%2C%20strategic%20business%20development&width=600&height=400&seq=service-business-african&orientation=landscape"
+    }
+  ],
+  "about": {
+    "heading4": "About Knowledge Without Borders",
+    "text9": "Founded in November 2018, we are a bilingual consulting firm dedicated to building organizational capacity across diverse sectors. Our multidisciplinary approach combines academic excellence with practical experience.",
+    "label8": "Bilingual services in English and French",
+    "label9": "8 specialized consulting areas",
+    "label10": "Led by Dr. François Yabit MA, MBA, PgD, PhD, CFA",
+    "text10": "Learn More About Us ",
+    "image": "https://readdy.ai/api/search-image?query=Professional%20African%20Canadian%20business%20team%20in%20modern%20office%20environment%2C%20Black%20multicultural%20professionals%20collaborating%2C%20brown-skinned%20organizational%20development%20team%2C%20capacity%20building%20consultants%2C%20clean%20corporate%20setting%2C%20natural%20lighting&width=600&height=400&seq=about-preview-african&orientation=landscape",
+    "imageAlt": "About Knowledge Without Borders"
+  },
+  "trainingSection": {
+    "heading5": "Professional Training Programs",
+    "text11": "Comprehensive training solutions for board members, staff, and volunteers",
+    "text12": "Explore Training Programs ",
+    "label11": "Duration: ",
+    "label12": "For: ",
+    "subheading3": "Key Topics Covered:",
+    "text13": "Read More "
+  },
+  "programs": [
+    {
+      "title": "Board Governance & Leadership Training",
+      "description": "Comprehensive training program designed to enhance board effectiveness and governance excellence. Our program covers strategic planning competence, board roles and responsibilities, fiduciary duties, risk management, and leadership development. Perfect for board members seeking to maximize their organizational impact and governance effectiveness.",
+      "duration": "2-3 Days",
+      "participants": "Board Members & Directors",
+      "topics": [
+        "Strategic Planning",
+        "Governance Excellence",
+        "Risk Management",
+        "Leadership Development"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20professional%20board%20meeting%20with%20Black%20directors%20around%20conference%20table%2C%20brown-skinned%20diverse%20board%20members%20in%20governance%20training%20session%2C%20modern%20boardroom%2C%20collaborative%20leadership%20development&width=600&height=400&seq=training-board-african&orientation=landscape"
+    },
+    {
+      "title": "Strategic Planning & Implementation",
+      "description": "Intensive training focused on developing strategic thinking capabilities and implementation excellence. Participants learn to create comprehensive strategic plans, develop implementation roadmaps, monitor progress, and adapt strategies for maximum organizational effectiveness and sustainable growth.",
+      "duration": "2-4 Days",
+      "participants": "Senior Management & Leaders",
+      "topics": [
+        "Strategic Thinking",
+        "Implementation Planning",
+        "Performance Monitoring",
+        "Change Management"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20strategic%20planning%20workshop%20with%20Black%20facilitator%20and%20diverse%20team%20members%2C%20brown-skinned%20professionals%20in%20collaborative%20planning%20session%2C%20modern%20training%20facility%2C%20professional%20development&width=600&height=400&seq=training-strategic-african&orientation=landscape"
+    },
+    {
+      "title": "Financial Management & Budgeting",
+      "description": "Essential financial literacy training covering budget development, financial statement analysis, and fiscal responsibility. Participants gain practical skills in reading financial statements, developing operating budgets, understanding audit processes, and implementing sound financial management practices for organizational sustainability.",
+      "duration": "1-2 Days",
+      "participants": "Finance Staff & Managers",
+      "topics": [
+        "Budget Development",
+        "Financial Analysis",
+        "Audit Processes",
+        "Fiscal Responsibility"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20financial%20training%20workshop%20with%20Black%20participants%20reviewing%20budget%20documents%20and%20charts%2C%20brown-skinned%20professionals%20in%20financial%20education%2C%20modern%20classroom%20setting&width=600&height=400&seq=training-financial-african&orientation=landscape"
+    },
+    {
+      "title": "Fundraising & Grant Writing Excellence",
+      "description": "Comprehensive training in fundraising strategies and proposal writing techniques. Learn to identify funding opportunities, develop compelling grant proposals, create fundraising campaigns, and build sustainable donor relationships. Includes hands-on practice with real proposal development and presentation skills.",
+      "duration": "2-3 Days",
+      "participants": "Development Staff & Volunteers",
+      "topics": [
+        "Grant Writing",
+        "Donor Relations",
+        "Campaign Development",
+        "Proposal Presentation"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20fundraising%20workshop%20with%20Black%20participants%20learning%20grant%20writing%20techniques%2C%20brown-skinned%20professionals%20in%20training%20session%2C%20collaborative%20learning%20environment%2C%20modern%20classroom&width=600&height=400&seq=training-fundraising-african&orientation=landscape"
+    },
+    {
+      "title": "Employment Readiness & Career Development",
+      "description": "Comprehensive job preparation program designed to enhance employability and career advancement. Covers resume writing, interview skills, workplace communication, professional networking, career planning, and job search strategies. Includes practical exercises, mock interviews, and personalized career coaching.",
+      "duration": "4-6 Weeks",
+      "participants": "Job Seekers & Career Changers",
+      "topics": [
+        "Resume Writing",
+        "Interview Skills",
+        "Professional Networking",
+        "Career Planning"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20employment%20readiness%20training%20with%20Black%20participants%20in%20professional%20development%20workshop%2C%20brown-skinned%20diverse%20job%20seekers%20in%20preparation%20session%2C%20modern%20training%20facility&width=600&height=400&seq=training-employment-african&orientation=landscape"
+    },
+    {
+      "title": "Human Resources & Policy Development",
+      "description": "Essential HR training covering recruitment, performance management, policy development, and workplace compliance. Participants learn to create effective HR policies, manage employee relations, conduct performance evaluations, and ensure legal compliance while fostering positive workplace culture and organizational effectiveness.",
+      "duration": "2-3 Days",
+      "participants": "HR Staff & Managers",
+      "topics": [
+        "Policy Development",
+        "Performance Management",
+        "Employee Relations",
+        "Legal Compliance"
+      ],
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20HR%20training%20workshop%20with%20Black%20professionals%20learning%20policy%20development%2C%20brown-skinned%20human%20resources%20team%20in%20education%20session%2C%20modern%20training%20room%2C%20collaborative%20learning&width=600&height=400&seq=training-hr-african&orientation=landscape"
+    }
+  ],
+  "policiesSection": {
+    "heading6": "Essential Organizational Policies",
+    "text14": "12 critical policies every nonprofit organization should have for effective governance",
+    "text15": "View All Policies ",
+    "text16": "Essential policy framework for organizational excellence"
+  },
+  "policies": [
+    "Code of Conduct & Ethics",
+    "Recruitment Policy",
+    "Health & Safety Policy",
+    "Financial Management"
+  ],
+  "gallerySection": {
+    "heading7": "Our Achievements Gallery",
+    "text17": "Showcasing our successful projects, training sessions, and organizational transformations",
+    "text18": "View Full Gallery "
+  },
+  "galleryPreview": [
+    {
+      "title": "Strategic Planning Workshop",
+      "description": "Successful 3-day strategic planning session with local nonprofit",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20professional%20workshop%20session%20with%20Black%20participants%2C%20brown-skinned%20diverse%20team%20in%20strategic%20planning%20meeting%2C%20facilitator%20presenting%2C%20collaborative%20environment%2C%20modern%20conference%20room&width=400&height=300&seq=gallery-1-african&orientation=landscape"
+    },
+    {
+      "title": "Board Training Program",
+      "description": "Comprehensive board governance training for community organization",
+      "image": "https://readdy.ai/api/search-image?query=African%20descent%20board%20meeting%20training%20session%2C%20Black%20professional%20facilitator%2C%20brown-skinned%20diverse%20board%20members%2C%20governance%20workshop%2C%20modern%20meeting%20room&width=400&height=300&seq=gallery-2-african&orientation=landscape"
+    },
+    {
+      "title": "Policy Development Success",
+      "description": "Complete policy framework implementation for growing organization",
+      "image": "https://readdy.ai/api/search-image?query=African%20Canadian%20professional%20team%20reviewing%20policy%20documents%2C%20Black%20organizational%20development%20team%2C%20brown-skinned%20professionals%20in%20policy%20framework%20meeting%2C%20collaborative%20work%20environment&width=400&height=300&seq=gallery-3-african&orientation=landscape"
+    }
+  ],
+  "contact": {
+    "heading8": "Ready to Transform Your Organization?",
+    "text19": "Contact us today to discuss how our capacity-building services can help your organization achieve its goals",
+    "subheading4": "Call Us",
+    "text20": "(437) 875-8045",
+    "subheading5": "Email Us",
+    "text21": "kwb.csfglobal@gmail.com",
+    "subheading6": "Visit Us",
+    "text22": "Etobicoke, Ontario",
+    "text23": "Get In Touch "
+  },
+  "clients": {
+    "heading9": "Our Valued Clients",
+    "text24": "Trusted by organizations across various sectors for capacity-building excellence"
+  },
+  "clientList": [
+    "Abundant Living",
+    "Action for Women and Family Foundation",
+    "African Canadian Seniors Network",
+    "African Social Development Council",
+    "Canadian and African Women Aid Program",
+    "Connecture Canada",
+    "Dar Wadi for Refugees and Immigrants",
+    "Eritrean Parents Liaison Council",
+    "Great Grace Ministries",
+    "Ontario Council of Agencies Serving Immigrants",
+    "Overcomer Community Development Centre",
+    "Youth Connect Services"
+  ]
+}

@@ -42,5 +42,10 @@ Capacity-building for non-profits and businesses in Etobicoke: strategic plannin
 - `src/content/announcement.json` (bilingual announcement from Papa François's document, shown at `/announcement` and in the home strip), `site.json` (email, phone, social links: footer, Contact, announcement), `seo.json`.
 - Pages CMS (`.pages.yml`) and Sveltia (`public/admin/`, https://kwb-csf.com/admin/). BOTH GENERATED: `npm run cms:config` from the JSON + `scripts/cms-registry.mjs`; `npm run cms:check`. Never edit them by hand.
 - Sveltia sign-in here is "Sign In Using Access Token" only: the site is published through the `live` branch, so a GitHub login secret can never be placed on the server (it would be committed).
-- Page text of the other pages is still hard-coded: move it to `src/content/pages/*.json` next (LDII is the model).
 - Logo, icons and share cards come from the official letterhead (`public/media/kwb-logo.png`). Open questions: `PLACEHOLDERS.md`.
+
+## Everything editable (17 Nov 2026)
+- All visible text, pictures and links of every page are in `src/content/pages/<page>.json` (each starts with `hero` = top banner), menu and footer in `src/content/layout/*.json`. Components import them as `copy` (or `pageText`). Visitors saw no change (before/after snapshots of all 9 addresses: identical).
+- Rule from now on: no new hard-coded text, pictures or links in components. New file → `scripts/cms-registry.mjs` → `npm run cms:config` → commit.
+- Tools: `scripts/studio-tools/` (extract, extract2, snapshot, compare).
+- The contact form sends through Formspree (`formspree.io/f/xvglzkwz`); who receives it is unconfirmed (see PLACEHOLDERS.md).

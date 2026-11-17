@@ -1,0 +1,256 @@
+{
+  "hero": {
+    "backgroundImage": "https://readdy.ai/api/search-image?query=Professional%20African%20Canadian%20training%20workshop%2C%20diverse%20Black%20professionals%20in%20learning%20session%2C%20brown%20skin%20professionals%2C%20capacity%20building%20training%2C%20modern%20conference%20room%2C%20interactive%20professional%20development%2C%20natural%20lighting&width=1920&height=1080&seq=training-hero-bg-v2&orientation=landscape",
+    "title": "Professional Training Programs",
+    "text": "Comprehensive capacity-building training solutions for board members, staff, volunteers, and individuals seeking professional development",
+    "label": "✓ Interactive Workshops",
+    "label2": "✓ Customized Programs",
+    "label3": "✓ Expert Facilitators",
+    "label4": "✓ Bilingual Delivery"
+  },
+  "programCard": {
+    "text": "Duration",
+    "text2": "Participants",
+    "text3": "Format",
+    "subheading": "Learning Objectives",
+    "subheading2": "Key Topics Covered",
+    "subheading3": "Expected Outcomes"
+  },
+  "approaches": [
+    {
+      "title": "Interactive Learning",
+      "description": "Engaging workshops that combine theory with practical exercises and real-world case studies",
+      "icon": "ri-presentation-line",
+      "color": "blue"
+    },
+    {
+      "title": "Customized Content",
+      "description": "Training programs tailored to your organization's specific needs, context, and challenges",
+      "icon": "ri-settings-line",
+      "color": "green"
+    },
+    {
+      "title": "Expert Facilitation",
+      "description": "Led by experienced professionals with deep expertise in organizational development",
+      "icon": "ri-user-star-line",
+      "color": "purple"
+    },
+    {
+      "title": "Practical Application",
+      "description": "Focus on immediately applicable skills and knowledge that participants can use right away",
+      "icon": "ri-tools-line",
+      "color": "orange"
+    },
+    {
+      "title": "Ongoing Support",
+      "description": "Post-training coaching and support to ensure successful implementation of new skills",
+      "icon": "ri-support-line",
+      "color": "red"
+    },
+    {
+      "title": "Bilingual Delivery",
+      "description": "Training available in both English and French to serve diverse communities",
+      "icon": "ri-translate-line",
+      "color": "teal"
+    }
+  ],
+  "trainingApproachSection": {
+    "heading": "Our Training Approach",
+    "text": "Evidence-based, interactive training methodologies that ensure effective learning and skill development"
+  },
+  "benefitsSection": {
+    "heading": "Benefits of Professional Development",
+    "text": "Investing in professional development training creates lasting positive impact for individuals, teams, and organizations as a whole.",
+    "subheading": "Enhanced Performance",
+    "text2": "Improved skills and knowledge lead to better job performance and organizational effectiveness",
+    "subheading2": "Stronger Leadership",
+    "text3": "Develop confident, capable leaders who can guide organizations through challenges and change",
+    "subheading3": "Better Governance",
+    "text4": "Improved board governance and organizational oversight through proper training and development",
+    "subheading4": "Career Advancement",
+    "text5": "Enhanced employability and career prospects through professional skill development",
+    "image": "https://readdy.ai/api/search-image?query=Professional%20development%20success%2C%20diverse%20team%20celebrating%20achievement%2C%20workplace%20training%20results%2C%20career%20advancement%2C%20organizational%20growth%2C%20modern%20office%20environment&width=600&height=400&seq=training-benefits&orientation=landscape",
+    "imageAlt": "Training Benefits"
+  },
+  "ctasection": {
+    "heading": "Ready to Invest in Professional Development?",
+    "text": "Contact us to discuss customized training solutions that meet your organization's specific needs and goals.",
+    "text2": "Schedule Training Consultation",
+    "text3": "View All Services"
+  },
+  "trainingPrograms": [
+    {
+      "title": "Board Governance Training",
+      "description": "Comprehensive training program designed to enhance board effectiveness, governance practices, and strategic oversight capabilities.",
+      "duration": "2-3 Days",
+      "participants": "Board Members",
+      "format": "Workshop",
+      "color": "blue",
+      "icon": "ri-shield-check-line",
+      "image": "https://readdy.ai/api/search-image?query=Professional%20board%20meeting%20training%20session%2C%20diverse%20board%20members%2C%20governance%20workshop%2C%20modern%20conference%20room%2C%20facilitator%20presenting%2C%20collaborative%20environment&width=400&height=300&seq=board-training&orientation=landscape",
+      "objectives": [
+        "Understand roles and responsibilities of board members",
+        "Develop effective governance policies and procedures",
+        "Enhance strategic planning and oversight capabilities",
+        "Improve board meeting effectiveness and decision-making",
+        "Strengthen fiduciary responsibilities and legal compliance"
+      ],
+      "topics": [
+        "Board Roles and Responsibilities",
+        "Governance Best Practices",
+        "Strategic Planning Oversight",
+        "Financial Oversight and Accountability",
+        "Risk Management",
+        "Board Meeting Management",
+        "Conflict of Interest Policies",
+        "Executive Director Evaluation"
+      ],
+      "outcomes": "Participants will gain comprehensive understanding of effective board governance, develop practical skills for board leadership, and create action plans for improving their organization's governance practices."
+    },
+    {
+      "title": "Leadership Development Program",
+      "description": "Strategic leadership training focused on developing essential management and leadership skills for organizational excellence.",
+      "duration": "1-2 Days",
+      "participants": "Senior Management",
+      "format": "Interactive Workshop",
+      "color": "green",
+      "icon": "ri-user-star-line",
+      "image": "https://readdy.ai/api/search-image?query=Leadership%20development%20workshop%2C%20professional%20facilitator%20training%20executives%2C%20management%20skills%20development%2C%20modern%20training%20room%2C%20interactive%20session&width=400&height=300&seq=leadership-training&orientation=landscape",
+      "objectives": [
+        "Develop authentic leadership style and presence",
+        "Enhance communication and interpersonal skills",
+        "Master change management and organizational transformation",
+        "Build high-performing teams and foster collaboration",
+        "Strengthen decision-making and problem-solving abilities"
+      ],
+      "topics": [
+        "Leadership Styles and Emotional Intelligence",
+        "Strategic Thinking and Vision Development",
+        "Team Building and Motivation",
+        "Communication and Conflict Resolution",
+        "Change Management",
+        "Performance Management",
+        "Delegation and Empowerment",
+        "Innovation and Creativity"
+      ],
+      "outcomes": "Leaders will develop enhanced self-awareness, improved management capabilities, and practical tools for driving organizational success and team performance."
+    },
+    {
+      "title": "Employment Readiness Training",
+      "description": "Comprehensive job preparation program designed to enhance employability and career development prospects.",
+      "duration": "4-6 Weeks",
+      "participants": "Job Seekers",
+      "format": "Multi-session Program",
+      "color": "purple",
+      "icon": "ri-briefcase-line",
+      "image": "https://readdy.ai/api/search-image?query=Employment%20readiness%20training%20session%2C%20diverse%20job%20seekers%2C%20career%20development%20workshop%2C%20professional%20skills%20training%2C%20modern%20classroom%20environment&width=400&height=300&seq=employment-training&orientation=landscape",
+      "objectives": [
+        "Develop effective job search strategies and techniques",
+        "Create compelling resumes and cover letters",
+        "Master interview skills and professional presentation",
+        "Build networking and relationship-building capabilities",
+        "Enhance workplace readiness and professional skills"
+      ],
+      "topics": [
+        "Resume and Cover Letter Writing",
+        "Interview Preparation and Practice",
+        "Job Search Strategies",
+        "Networking and Professional Relationships",
+        "Workplace Communication",
+        "Professional Etiquette",
+        "Career Planning and Goal Setting",
+        "Digital Literacy and Online Presence"
+      ],
+      "outcomes": "Participants will gain confidence in job searching, develop professional presentation skills, and create personalized career action plans for successful employment."
+    },
+    {
+      "title": "Skills Development Workshops",
+      "description": "Targeted skill-building sessions focused on specific competencies needed for professional and organizational success.",
+      "duration": "1 Day",
+      "participants": "Staff & Volunteers",
+      "format": "Hands-on Workshop",
+      "color": "orange",
+      "icon": "ri-tools-line",
+      "image": "https://readdy.ai/api/search-image?query=Professional%20skills%20workshop%2C%20hands-on%20training%20session%2C%20diverse%20participants%20learning%2C%20interactive%20skill%20development%2C%20modern%20training%20facility&width=400&height=300&seq=skills-workshop&orientation=landscape",
+      "objectives": [
+        "Develop specific technical and soft skills",
+        "Enhance productivity and work efficiency",
+        "Improve communication and collaboration abilities",
+        "Build problem-solving and critical thinking skills",
+        "Strengthen project management capabilities"
+      ],
+      "topics": [
+        "Communication and Presentation Skills",
+        "Project Management Fundamentals",
+        "Time Management and Productivity",
+        "Customer Service Excellence",
+        "Teamwork and Collaboration",
+        "Problem-Solving Techniques",
+        "Technology and Digital Skills",
+        "Quality Improvement Methods"
+      ],
+      "outcomes": "Participants will acquire practical skills immediately applicable to their work, improved confidence in their abilities, and enhanced contribution to organizational success."
+    },
+    {
+      "title": "Organizational Training Programs",
+      "description": "Customized training solutions designed to address specific organizational needs and capacity-building requirements.",
+      "duration": "Flexible",
+      "participants": "All Staff",
+      "format": "Customized",
+      "color": "red",
+      "icon": "ri-building-line",
+      "image": "https://readdy.ai/api/search-image?query=Organizational%20training%20program%2C%20company-wide%20workshop%2C%20professional%20development%20session%2C%20diverse%20employees%2C%20modern%20corporate%20training%20room&width=400&height=300&seq=org-training&orientation=landscape",
+      "objectives": [
+        "Address specific organizational capacity gaps",
+        "Align staff skills with organizational goals",
+        "Improve overall organizational performance",
+        "Foster a culture of continuous learning",
+        "Enhance employee engagement and retention"
+      ],
+      "topics": [
+        "Organizational Culture and Values",
+        "Policy and Procedure Training",
+        "Customer Service Standards",
+        "Health and Safety Protocols",
+        "Diversity and Inclusion",
+        "Ethics and Professional Conduct",
+        "Technology and System Training",
+        "Quality Assurance and Standards"
+      ],
+      "outcomes": "Organizations will see improved staff performance, better alignment with organizational goals, enhanced workplace culture, and increased operational effectiveness."
+    },
+    {
+      "title": "Professional Development Planning",
+      "description": "Strategic career development program focused on creating personalized professional growth pathways.",
+      "duration": "2 Days",
+      "participants": "Individual Professionals",
+      "format": "Coaching & Workshop",
+      "color": "teal",
+      "icon": "ri-roadmap-line",
+      "image": "https://readdy.ai/api/search-image?query=Professional%20development%20planning%20session%2C%20career%20coaching%2C%20individual%20consultation%2C%20professional%20growth%20planning%2C%20modern%20office%20consultation%20room&width=400&height=300&seq=prof-development&orientation=landscape",
+      "objectives": [
+        "Assess current skills and competencies",
+        "Identify career goals and development opportunities",
+        "Create personalized professional development plans",
+        "Develop strategies for skill enhancement",
+        "Build networks and mentoring relationships"
+      ],
+      "topics": [
+        "Skills Assessment and Gap Analysis",
+        "Career Goal Setting and Planning",
+        "Professional Development Strategies",
+        "Networking and Relationship Building",
+        "Mentoring and Coaching",
+        "Continuing Education Options",
+        "Performance Improvement Planning",
+        "Work-Life Balance and Wellness"
+      ],
+      "outcomes": "Individuals will have clear career direction, personalized development plans, enhanced self-awareness, and practical strategies for achieving professional goals."
+    }
+  ],
+  "page": {
+    "text": "Loading...",
+    "heading": "Comprehensive Training Solutions",
+    "text2": "Professional development programs designed to build capacity, enhance skills, and drive organizational success"
+  }
+}

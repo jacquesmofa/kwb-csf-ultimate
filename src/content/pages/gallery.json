@@ -1,0 +1,210 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "category": "workshops",
+      "title": "Community Session",
+      "url": "https://i.imgur.com/jZQ3NqP.png"
+    },
+    {
+      "id": 2,
+      "category": "training",
+      "title": "Professional Development",
+      "url": "https://i.imgur.com/LAznKX0.png"
+    },
+    {
+      "id": 3,
+      "category": "meetings",
+      "title": "Strategic Planning",
+      "url": "https://i.imgur.com/ng8UgtI.png"
+    },
+    {
+      "id": 4,
+      "category": "events",
+      "title": "Annual Gathering",
+      "url": "https://i.imgur.com/kFdmf6B.png"
+    },
+    {
+      "id": 5,
+      "category": "achievements",
+      "title": "Program Success",
+      "url": "https://i.imgur.com/pNoljJc.png"
+    },
+    {
+      "id": 6,
+      "category": "workshops",
+      "title": "Skill Building",
+      "url": "https://i.imgur.com/BCnL9sQ.png"
+    },
+    {
+      "id": 7,
+      "category": "training",
+      "title": "Capacity Building",
+      "url": "https://i.imgur.com/R1KXnio.png"
+    },
+    {
+      "id": 8,
+      "category": "meetings",
+      "title": "Leadership Sync",
+      "url": "https://i.imgur.com/2Yu3Px8.png"
+    },
+    {
+      "id": 9,
+      "category": "events",
+      "title": "Community Outreach",
+      "url": "https://i.imgur.com/OG2MtRO.png"
+    },
+    {
+      "id": 10,
+      "category": "achievements",
+      "title": "Milestone Celebration",
+      "url": "https://i.imgur.com/EBgoezX.png"
+    },
+    {
+      "id": 11,
+      "category": "workshops",
+      "title": "Workshop Highlight",
+      "url": "https://i.imgur.com/vpUJcIx.png"
+    },
+    {
+      "id": 12,
+      "category": "training",
+      "title": "Group Training",
+      "url": "https://i.imgur.com/uDPG4Pc.png"
+    },
+    {
+      "id": 13,
+      "category": "meetings",
+      "title": "Board Meeting",
+      "url": "https://i.imgur.com/M05LmNo.png"
+    },
+    {
+      "id": 14,
+      "category": "events",
+      "title": "Networking Event",
+      "url": "https://i.imgur.com/KH6njqF.png"
+    },
+    {
+      "id": 15,
+      "category": "achievements",
+      "title": "Project Completion",
+      "url": "https://i.imgur.com/xuJG6eA.png"
+    },
+    {
+      "id": 16,
+      "category": "workshops",
+      "title": "Collaborative Space",
+      "url": "https://i.imgur.com/71jd7E0.png"
+    },
+    {
+      "id": 17,
+      "category": "training",
+      "title": "Empowerment Session",
+      "url": "https://i.imgur.com/twN1TUa.png"
+    },
+    {
+      "id": 18,
+      "category": "meetings",
+      "title": "Consultation",
+      "url": "https://i.imgur.com/EmYZKXx.png"
+    },
+    {
+      "id": 19,
+      "category": "events",
+      "title": "Partner Recognition",
+      "url": "https://i.imgur.com/acgPfaN.png"
+    },
+    {
+      "id": 20,
+      "category": "achievements",
+      "title": "Impact Report",
+      "url": "https://i.imgur.com/n4FABIU.png"
+    },
+    {
+      "id": 21,
+      "category": "workshops",
+      "title": "Innovation Workshop",
+      "url": "https://i.imgur.com/OQeCxDV.png"
+    },
+    {
+      "id": 22,
+      "category": "training",
+      "title": "Staff Development",
+      "url": "https://i.imgur.com/woMMspL.png"
+    },
+    {
+      "id": 23,
+      "category": "meetings",
+      "title": "Executive Session",
+      "url": "https://i.imgur.com/tAM8kht.png"
+    },
+    {
+      "id": 24,
+      "category": "events",
+      "title": "Forum Discussion",
+      "url": "https://i.imgur.com/258rsQt.png"
+    },
+    {
+      "id": 25,
+      "category": "achievements",
+      "title": "Excellence Award",
+      "url": "https://i.imgur.com/bKWXzMw.png"
+    },
+    {
+      "id": 26,
+      "category": "workshops",
+      "title": "Hands-on Learning",
+      "url": "https://i.imgur.com/mG5Ls7y.png"
+    },
+    {
+      "id": 27,
+      "category": "training",
+      "title": "Educational Seminar",
+      "url": "https://i.imgur.com/cTeUZtm.png"
+    }
+  ],
+  "galleryHero": {
+    "title": "Our Achievements Gallery",
+    "text": "Visual documentation of our capacity-building work and organizational transformations."
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Photos",
+      "icon": "ri-image-line"
+    },
+    {
+      "id": "workshops",
+      "name": "Workshops",
+      "icon": "ri-presentation-line"
+    },
+    {
+      "id": "training",
+      "name": "Training",
+      "icon": "ri-graduation-cap-line"
+    },
+    {
+      "id": "meetings",
+      "name": "Meetings",
+      "icon": "ri-team-line"
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "icon": "ri-calendar-event-line"
+    },
+    {
+      "id": "achievements",
+      "name": "Achievements",
+      "icon": "ri-trophy-line"
+    }
+  ],
+  "lightbox": {
+    "imageAlt": "Expanded view"
+  },
+  "page": {
+    "text": "Loading Gallery...",
+    "heading": "Ready to Create Your Success Story?",
+    "text2": "Start Your Project"
+  }
+}

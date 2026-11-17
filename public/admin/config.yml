@@ -117,8 +117,2047 @@ collections:
                       label: "Item"
                       required: false
                       widget: "text"
+  - name: "pages"
+    label: "2. Pages (text and pictures)"
+    files:
+      - name: "page-home"
+        label: "Home page"
+        file: "src/content/pages/home.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+              - name: "label3"
+                label: "Label3"
+                required: false
+                widget: "string"
+              - name: "label4"
+                label: "Label4"
+                required: false
+                widget: "string"
+              - name: "label5"
+                label: "Label5"
+                required: false
+                widget: "string"
+              - name: "label6"
+                label: "Label6"
+                required: false
+                widget: "string"
+              - name: "label7"
+                label: "Label7"
+                required: false
+                widget: "string"
+          - name: "mission"
+            label: "Mission"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading2"
+                label: "Heading2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "text"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "text"
+          - name: "servicesSection"
+            label: "Services section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading3"
+                label: "Heading3"
+                required: false
+                widget: "string"
+              - name: "text6"
+                label: "Text6"
+                required: false
+                widget: "string"
+              - name: "text7"
+                label: "Text7"
+                required: false
+                widget: "string"
+              - name: "text8"
+                label: "Text8"
+                required: false
+                widget: "string"
+          - name: "services"
+            label: "Services"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+          - name: "about"
+            label: "About"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading4"
+                label: "Heading4"
+                required: false
+                widget: "string"
+              - name: "text9"
+                label: "Text9"
+                required: false
+                widget: "text"
+              - name: "label8"
+                label: "Label8"
+                required: false
+                widget: "string"
+              - name: "label9"
+                label: "Label9"
+                required: false
+                widget: "string"
+              - name: "label10"
+                label: "Label10"
+                required: false
+                widget: "string"
+              - name: "text10"
+                label: "Text10"
+                required: false
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+          - name: "trainingSection"
+            label: "Training section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading5"
+                label: "Heading5"
+                required: false
+                widget: "string"
+              - name: "text11"
+                label: "Text11"
+                required: false
+                widget: "string"
+              - name: "text12"
+                label: "Text12"
+                required: false
+                widget: "string"
+              - name: "label11"
+                label: "Label11"
+                required: false
+                widget: "string"
+              - name: "label12"
+                label: "Label12"
+                required: false
+                widget: "string"
+              - name: "subheading3"
+                label: "Subheading3"
+                required: false
+                widget: "string"
+              - name: "text13"
+                label: "Text13"
+                required: false
+                widget: "string"
+          - name: "programs"
+            label: "Programs"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "duration"
+                label: "Duration"
+                required: false
+                widget: "string"
+              - name: "participants"
+                label: "Participants"
+                required: false
+                widget: "string"
+              - name: "topics"
+                label: "Topics"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+          - name: "policiesSection"
+            label: "Policies section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading6"
+                label: "Heading6"
+                required: false
+                widget: "string"
+              - name: "text14"
+                label: "Text14"
+                required: false
+                widget: "string"
+              - name: "text15"
+                label: "Text15"
+                required: false
+                widget: "string"
+              - name: "text16"
+                label: "Text16"
+                required: false
+                widget: "string"
+          - name: "policies"
+            label: "Policies"
+            required: false
+            widget: "list"
+            field:
+              name: "item"
+              label: "Item"
+              required: false
+              widget: "string"
+          - name: "gallerySection"
+            label: "Gallery section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading7"
+                label: "Heading7"
+                required: false
+                widget: "string"
+              - name: "text17"
+                label: "Text17"
+                required: false
+                widget: "string"
+              - name: "text18"
+                label: "Text18"
+                required: false
+                widget: "string"
+          - name: "galleryPreview"
+            label: "Gallery preview"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+          - name: "contact"
+            label: "Contact"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading8"
+                label: "Heading8"
+                required: false
+                widget: "string"
+              - name: "text19"
+                label: "Text19"
+                required: false
+                widget: "text"
+              - name: "subheading4"
+                label: "Subheading4"
+                required: false
+                widget: "string"
+              - name: "text20"
+                label: "Text20"
+                required: false
+                widget: "string"
+              - name: "subheading5"
+                label: "Subheading5"
+                required: false
+                widget: "string"
+              - name: "text21"
+                label: "Text21"
+                required: false
+                widget: "string"
+              - name: "subheading6"
+                label: "Subheading6"
+                required: false
+                widget: "string"
+              - name: "text22"
+                label: "Text22"
+                required: false
+                widget: "string"
+              - name: "text23"
+                label: "Text23"
+                required: false
+                widget: "string"
+          - name: "clients"
+            label: "Clients"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading9"
+                label: "Heading9"
+                required: false
+                widget: "string"
+              - name: "text24"
+                label: "Text24"
+                required: false
+                widget: "string"
+          - name: "clientList"
+            label: "Client list"
+            required: false
+            widget: "list"
+            field:
+              name: "item"
+              label: "Item"
+              required: false
+              widget: "string"
+      - name: "page-about"
+        label: "About page"
+        file: "src/content/pages/about.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "companyOverview"
+            label: "Company overview"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "text"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "text"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "text"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+              - name: "text6"
+                label: "Text6"
+                required: false
+                widget: "string"
+              - name: "text7"
+                label: "Text7"
+                required: false
+                widget: "string"
+          - name: "leadershipSection"
+            label: "Leadership section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "text"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+              - name: "label3"
+                label: "Label3"
+                required: false
+                widget: "string"
+              - name: "label4"
+                label: "Label4"
+                required: false
+                widget: "string"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "text"
+              - name: "subheading3"
+                label: "Subheading3"
+                required: false
+                widget: "string"
+              - name: "text6"
+                label: "Text6"
+                required: false
+                widget: "text"
+              - name: "subheading4"
+                label: "Subheading4"
+                required: false
+                widget: "string"
+              - name: "text7"
+                label: "Text7"
+                required: false
+                widget: "text"
+          - name: "mediaItems"
+            label: "Media items"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "type"
+                label: "Kind of block"
+                required: false
+                hint: "paragraph = plain text; section = heading + text; list = bullet points."
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "thumbnail"
+                label: "Thumbnail"
+                required: false
+                widget: "image"
+              - name: "duration"
+                label: "Duration"
+                required: false
+                widget: "string"
+          - name: "mediaShowcaseSection"
+            label: "Media showcase section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+          - name: "values"
+            label: "Values"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "coreValuesSection"
+            label: "Core values section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "approachSection"
+            label: "Approach section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "subheading3"
+                label: "Subheading3"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "string"
+              - name: "subheading4"
+                label: "Subheading4"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+          - name: "clientCategories"
+            label: "Client categories"
+            required: false
+            widget: "list"
+            summary: "{{fields.category}}"
+            fields:
+              - name: "category"
+                label: "Category (id)"
+                required: false
+                widget: "string"
+              - name: "clients"
+                label: "Clients"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "clientSuccessSection"
+            label: "Client success section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "achievements"
+            label: "Achievements"
+            required: false
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - name: "number"
+                label: "Number"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "expertiseAreas"
+            label: "Expertise areas"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "expertiseHighlightsSection"
+            label: "Expertise highlights section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "expertiseAreasSection"
+            label: "Expertise areas section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+      - name: "page-services"
+        label: "Services page"
+        file: "src/content/pages/services.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+              - name: "label3"
+                label: "Label3"
+                required: false
+                widget: "string"
+              - name: "label4"
+                label: "Label4"
+                required: false
+                widget: "string"
+          - name: "processes"
+            label: "Processes"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "step"
+                label: "Step"
+                required: false
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "duration"
+                label: "Duration"
+                required: false
+                widget: "string"
+          - name: "processSection"
+            label: "Process section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "serviceAreas"
+            label: "Service areas"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "details"
+                label: "Details"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+          - name: "serviceAreasSection"
+            label: "Service areas section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "industries"
+            label: "Industries"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "industryExpertiseSection"
+            label: "Industry expertise section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "services"
+            label: "Services"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "detailedDescription"
+                label: "Detailed description"
+                required: false
+                widget: "text"
+              - name: "features"
+                label: "Features"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+              - name: "heading2"
+                label: "Heading2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "text"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "string"
+      - name: "page-training"
+        label: "Training page"
+        file: "src/content/pages/training.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+              - name: "label3"
+                label: "Label3"
+                required: false
+                widget: "string"
+              - name: "label4"
+                label: "Label4"
+                required: false
+                widget: "string"
+          - name: "programCard"
+            label: "Program card"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "subheading3"
+                label: "Subheading3"
+                required: false
+                widget: "string"
+          - name: "approaches"
+            label: "Approaches"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+          - name: "trainingApproachSection"
+            label: "Training approach section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "benefitsSection"
+            label: "Benefits section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "text"
+              - name: "subheading3"
+                label: "Subheading3"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "text"
+              - name: "subheading4"
+                label: "Subheading4"
+                required: false
+                widget: "string"
+              - name: "text5"
+                label: "Text5"
+                required: false
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+          - name: "ctasection"
+            label: "Ctasection"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+          - name: "trainingPrograms"
+            label: "Training programs"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "duration"
+                label: "Duration"
+                required: false
+                widget: "string"
+              - name: "participants"
+                label: "Participants"
+                required: false
+                widget: "string"
+              - name: "format"
+                label: "Format"
+                required: false
+                widget: "string"
+              - name: "color"
+                label: "Color"
+                required: false
+                widget: "string"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "objectives"
+                label: "Objectives"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "topics"
+                label: "Topics"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+              - name: "outcomes"
+                label: "Outcomes"
+                required: false
+                widget: "text"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "text"
+      - name: "page-gallery"
+        label: "Gallery page"
+        file: "src/content/pages/gallery.json"
+        format: "json"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "id"
+                label: "Id"
+                required: false
+                widget: "number"
+              - name: "category"
+                label: "Category (id)"
+                required: false
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "url"
+                label: "Web address or picture"
+                required: false
+                widget: "image"
+          - name: "galleryHero"
+            label: "Gallery hero"
+            required: false
+            widget: "object"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "categories"
+            label: "Category tabs"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "id"
+                label: "Id"
+                required: false
+                widget: "string"
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+          - name: "lightbox"
+            label: "Lightbox"
+            required: false
+            widget: "object"
+            fields:
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+      - name: "page-policies"
+        label: "Policies page"
+        file: "src/content/pages/policies.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "policyCard"
+            label: "Policy card"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+          - name: "policies"
+            label: "Policies"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "items"
+                label: "Bullet points (for a list)"
+                required: false
+                widget: "list"
+                field:
+                  name: "item"
+                  label: "Item"
+                  required: false
+                  widget: "string"
+          - name: "corePolicies"
+            label: "Core policies"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "steps"
+            label: "Steps"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "step"
+                label: "Step"
+                required: false
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+          - name: "policyDevelopmentProcess"
+            label: "Policy development process"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "ctasection"
+            label: "Ctasection"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+      - name: "page-contact"
+        label: "Contact page"
+        file: "src/content/pages/contact.json"
+        format: "json"
+        fields:
+          - name: "hero"
+            label: "Top banner"
+            required: false
+            widget: "object"
+            fields:
+              - name: "backgroundImage"
+                label: "Background picture"
+                required: false
+                widget: "image"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "contactMethods"
+            label: "Contact methods"
+            required: false
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - name: "icon"
+                label: "Icon name"
+                required: false
+                hint: "Leave as it is unless adding a new network (Remix Icon name, e.g. ri-youtube-fill)."
+                widget: "string"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+              - name: "info"
+                label: "Info"
+                required: false
+                widget: "string"
+              - name: "description"
+                label: "Description (120 to 160 characters)"
+                required: false
+                widget: "text"
+          - name: "contactInfo"
+            label: "Contact info"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "contactForm"
+            label: "Contact form"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "nameField"
+            label: "Name field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "emailField"
+            label: "Email field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "organizationField"
+            label: "Organization field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "phoneField"
+            label: "Phone field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+          - name: "serviceField"
+            label: "Service field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "option"
+                label: "Option"
+                required: false
+                widget: "string"
+              - name: "option2"
+                label: "Option2"
+                required: false
+                widget: "string"
+              - name: "option3"
+                label: "Option3"
+                required: false
+                widget: "string"
+              - name: "option4"
+                label: "Option4"
+                required: false
+                widget: "string"
+              - name: "option5"
+                label: "Option5"
+                required: false
+                widget: "string"
+              - name: "option6"
+                label: "Option6"
+                required: false
+                widget: "string"
+              - name: "option7"
+                label: "Option7"
+                required: false
+                widget: "string"
+              - name: "option8"
+                label: "Option8"
+                required: false
+                widget: "string"
+          - name: "messageField"
+            label: "Message field"
+            required: false
+            widget: "object"
+            fields:
+              - name: "fieldLabel"
+                label: "Field label"
+                required: false
+                widget: "string"
+              - name: "placeholder"
+                label: "Placeholder"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "submissionStatusMessages"
+            label: "Submission status messages"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+          - name: "submitButton"
+            label: "Submit button"
+            required: false
+            widget: "object"
+            fields:
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+          - name: "mapSection"
+            label: "Map section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "mainOfficeMap"
+            label: "Main office map"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "embedUrl"
+                label: "Embed url"
+                required: false
+                widget: "text"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+          - name: "satelliteOfficeMap"
+            label: "Satellite office map"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "embedUrl"
+                label: "Embed url"
+                required: false
+                widget: "text"
+              - name: "title"
+                label: "Title"
+                required: false
+                widget: "string"
+          - name: "contactInformation"
+            label: "Contact information"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+          - name: "mainOffice"
+            label: "Main office"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "phoneLink"
+                label: "Phone link"
+                required: false
+                widget: "string"
+              - name: "link"
+                label: "Link"
+                required: false
+                widget: "string"
+              - name: "emailLink"
+                label: "Email link"
+                required: false
+                widget: "string"
+              - name: "link2"
+                label: "Link2"
+                required: false
+                widget: "string"
+              - name: "url"
+                label: "Web address or picture"
+                required: false
+                widget: "string"
+              - name: "link3"
+                label: "Link3"
+                required: false
+                widget: "string"
+              - name: "subheading2"
+                label: "Subheading2"
+                required: false
+                widget: "string"
+          - name: "satelliteOffice"
+            label: "Satellite office"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "phoneLink"
+                label: "Phone link"
+                required: false
+                widget: "string"
+              - name: "link"
+                label: "Link"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "emailLink"
+                label: "Email link"
+                required: false
+                widget: "string"
+              - name: "link2"
+                label: "Link2"
+                required: false
+                widget: "string"
+          - name: "ctasection"
+            label: "Ctasection"
+            required: false
+            widget: "object"
+            fields:
+              - name: "heading"
+                label: "Heading (for a section)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "phoneLink"
+                label: "Phone link"
+                required: false
+                widget: "string"
+              - name: "link"
+                label: "Link"
+                required: false
+                widget: "string"
+              - name: "emailLink"
+                label: "Email link"
+                required: false
+                widget: "string"
+              - name: "link2"
+                label: "Link2"
+                required: false
+                widget: "string"
+          - name: "page"
+            label: "Page"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+  - name: "layout"
+    label: "3. Menu and footer"
+    files:
+      - name: "header"
+        label: "Menu (top of every page)"
+        file: "src/content/layout/header.json"
+        format: "json"
+        fields:
+          - name: "logoContainerIncreasedSizeTo"
+            label: "Logo container increased size to"
+            required: false
+            widget: "object"
+            fields:
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+              - name: "label"
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: "label2"
+                label: "Label2"
+                required: false
+                widget: "string"
+      - name: "footer"
+        label: "Footer (bottom of every page)"
+        file: "src/content/layout/footer.json"
+        format: "json"
+        fields:
+          - name: "quickLinks"
+            label: "Quick links"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "href"
+                label: "Href"
+                required: false
+                widget: "string"
+          - name: "resources"
+            label: "Resources"
+            required: false
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - name: "name"
+                label: "Name"
+                required: false
+                widget: "string"
+              - name: "href"
+                label: "Href"
+                required: false
+                widget: "string"
+          - name: "logoContainer"
+            label: "Logo container"
+            required: false
+            widget: "object"
+            fields:
+              - name: "image"
+                label: "Picture"
+                required: false
+                widget: "image"
+              - name: "imageAlt"
+                label: "What the picture shows (for screen readers)"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "text"
+          - name: "quickLinksSection"
+            label: "Quick links section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+          - name: "resourcesSection"
+            label: "Resources section"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+          - name: "contactInfo"
+            label: "Contact info"
+            required: false
+            widget: "object"
+            fields:
+              - name: "subheading"
+                label: "Subheading"
+                required: false
+                widget: "string"
+              - name: "smallHeading"
+                label: "Small heading"
+                required: false
+                widget: "string"
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
+              - name: "text2"
+                label: "Text2"
+                required: false
+                widget: "string"
+              - name: "text3"
+                label: "Text3"
+                required: false
+                widget: "string"
+              - name: "text4"
+                label: "Text4"
+                required: false
+                widget: "string"
+              - name: "emailLink"
+                label: "Email link"
+                required: false
+                widget: "string"
+              - name: "link"
+                label: "Link"
+                required: false
+                widget: "string"
+          - name: "bottomFooter"
+            label: "Bottom footer"
+            required: false
+            widget: "object"
+            fields:
+              - name: "text"
+                label: "Text"
+                required: false
+                widget: "text"
   - name: "settings"
-    label: "2. Site settings (contact, social media, Google)"
+    label: "4. Site settings (contact, social media, Google)"
     files:
       - name: "site"
         label: "Contact details and social media links"
@@ -134,7 +2173,7 @@ collections:
             required: false
             widget: "string"
           - name: "url"
-            label: "Web address"
+            label: "Web address or picture"
             required: false
             widget: "string"
           - name: "email"
@@ -156,7 +2195,7 @@ collections:
                 required: false
                 widget: "string"
               - name: "url"
-                label: "Web address"
+                label: "Web address or picture"
                 required: false
                 widget: "string"
               - name: "icon"
@@ -179,11 +2218,11 @@ collections:
                 required: false
                 widget: "string"
               - name: "url"
-                label: "Web address"
+                label: "Web address or picture"
                 required: false
                 widget: "string"
               - name: "image"
-                label: "Share picture (1200 × 630)"
+                label: "Picture"
                 required: false
                 widget: "image"
               - name: "imageAlt"
@@ -218,7 +2257,7 @@ collections:
                 required: false
                 widget: "text"
               - name: "image"
-                label: "Share picture (1200 × 630)"
+                label: "Picture"
                 required: false
                 widget: "image"
               - name: "imageAlt"
